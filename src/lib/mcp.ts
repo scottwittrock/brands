@@ -113,12 +113,33 @@ export function registerBrandServer(server: McpServer): void {
         };
       }
 
+      // Siblings per cluster, so each asset can name the alternatives that
+      // cover the same idea rather than exposing a bare cluster id.
+      const siblings = new Map<string, string[]>();
+      for (const a of assets) {
+        if (!a.cluster) continue;
+        const bucket = siblings.get(a.cluster);
+        if (bucket) bucket.push(a.file);
+        else siblings.set(a.cluster, [a.file]);
+      }
+
       const lines = assets.map((a) => {
         const label = a.name ?? a.file;
         const kind = a.kind ? ` [${a.kind}]` : "";
         const desc = a.description ? ` — ${a.description}` : "";
         const bg = a.background ? ` (background: ${a.background})` : "";
-        return `- **${label}**${kind}${desc}${bg}\n  ${a.url}`;
+        // Flag overlapping art so a caller doesn't settle on one of a redundant
+        // set without knowing the alternatives exist.
+        const dupe = a.sameArtAs
+          ? ` Same drawing as ${a.sameArtAs} — one of the pair should win.`
+          : "";
+        const others = (siblings.get(a.cluster ?? "") ?? []).filter(
+          (f) => f !== a.file,
+        );
+        const alts = others.length
+          ? ` Also drawn as: ${others.join(", ")}.`
+          : "";
+        return `- **${label}**${kind}${desc}${bg}${dupe}${alts}\n  ${a.url}`;
       });
 
       return {

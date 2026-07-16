@@ -959,3 +959,52 @@ pre {
 .src-file__body code {
   font-family: inherit;
 }
+
+/* ---------------------------------------------------------------------------
+ * Review — overlapping art, compared side by side
+ * ------------------------------------------------------------------------ */
+.review .sc-hero p {
+  max-width: 62ch;
+}
+.rv-group h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.rv-badge {
+  font-family: var(--b-font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--b-on-primary);
+  background: var(--b-accent);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+/* A single scrollable row, so a group's candidates stay visually adjacent
+   instead of wrapping onto separate lines the way the A-Z grid does. */
+.rv-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+.rv-card {
+  flex: 0 0 240px;
+}
+.rv-file {
+  margin: 6px 0 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  color: var(--b-muted);
+}
+.rv-note {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: var(--b-accent);
+}
+.rv-note code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+}

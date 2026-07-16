@@ -55,6 +55,14 @@ export default async function BrandPage({
   const look = getAspect(slug, "look");
   const voice = getAspect(slug, "voice");
   const assets = listAssets(slug);
+  // Only worth offering the review view when some art actually overlaps.
+  const hasOverlappingArt = (() => {
+    const counts = new Map<string, number>();
+    for (const a of assets) {
+      if (a.cluster) counts.set(a.cluster, (counts.get(a.cluster) ?? 0) + 1);
+    }
+    return [...counts.values()].some((n) => n > 1);
+  })();
 
   return (
     <main className="showcase" style={theme.vars as CSSProperties}>
@@ -70,6 +78,11 @@ export default async function BrandPage({
             <Link className="sc-example-link" href={`/brands/${slug}/source`}>
               View source markdown →
             </Link>
+            {hasOverlappingArt && (
+              <Link className="sc-example-link" href={`/brands/${slug}/review`}>
+                Review overlapping art →
+              </Link>
+            )}
           </div>
         </header>
 

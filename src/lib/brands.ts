@@ -164,6 +164,18 @@ export interface AssetManifestEntry {
    * "textured-terracotta" alternative when one exists.
    */
   style?: string;
+  /**
+   * Assets that depict the same idea share a cluster id, so overlapping art can
+   * be reviewed together and eventually narrowed to one. Absent once an asset
+   * has no siblings.
+   */
+  cluster?: string;
+  /**
+   * Set when another asset is the *same drawing* under a different name (an
+   * export at a different size), rather than merely a similar one. Names the
+   * counterpart file — one of the pair should win.
+   */
+  sameArtAs?: string;
 }
 
 /** A manifest entry resolved with its public URL and derived mime type. */
