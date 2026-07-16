@@ -47,7 +47,7 @@ export function registerBrandServer(server: McpServer): void {
     {
       brand: z
         .string()
-        .describe("Brand slug, e.g. 'nimbus'. Use list_brands to see options."),
+        .describe("Brand slug. Use list_brands to see options."),
       aspect: z
         .enum(["overview", "look", "voice", "all"])
         .optional()
@@ -85,7 +85,7 @@ export function registerBrandServer(server: McpServer): void {
     {
       brand: z
         .string()
-        .describe("Brand slug, e.g. 'nimbus'. Use list_brands to see options."),
+        .describe("Brand slug. Use list_brands to see options."),
     },
     async ({ brand }) => {
       const summary = listBrands().find((b) => b.slug === brand);
