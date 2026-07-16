@@ -1,0 +1,18 @@
+{
+  "assets": [
+    {
+      "file": "logo.svg",
+      "name": "Primary logo",
+      "kind": "logo",
+      "description": "Head for Product horizontal lockup (compass mark + wordmark + Scott Wittrock line). Use on light backgrounds.",
+      "background": "light"
+    },
+    {
+      "file": "icon.svg",
+      "name": "App icon / mark",
+      "kind": "icon",
+      "description": "Standalone teal rounded-square compass mark for avatars, favicons, and app tiles.",
+      "background": "any"
+    }
+  ]
+}
