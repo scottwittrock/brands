@@ -4,7 +4,7 @@
 
 Scott Wittrock is a technical product leader with over a decade of experience
 shipping software and building product teams. His personal brand operates under
-the banner **Head for Product** — a fractional CPO/CTO practice, 1:1 coaching for
+the banner Head for Product — a fractional CPO/CTO practice, 1:1 coaching for
 product managers, and a steady stream of practical writing on how product work
 actually gets done.
 
