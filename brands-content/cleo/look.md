@@ -61,8 +61,10 @@ Cleo uses a two-font system, plus a serif reserved for editorial moments.
 
 **Logo files.** The registry ships the ready-to-use marks as brand assets: the
 primary `cleo.` wordmark, the rounded-square app icon, and per-product wordmarks
-(`cleo track.`, `cleo routine.`, `cleo plan.`, `cleo connect.`). They are listed
-on the style guide and available over MCP via `get_brand_assets`.
+(`cleo track.`, `cleo routine.`, `cleo plan.`, `cleo connect.`). Alongside them
+sits the full illustration library — the bear cast, product objects, and Routine
+activity icons. Everything is listed on the style guide and available over MCP
+via `get_brand_assets`.
 
 ## Space & layout
 
@@ -74,10 +76,35 @@ on the style guide and available over MCP via `get_brand_assets`.
 
 ## Illustration & imagery
 
-- Filled, rounded shapes with soft internal shading and no hard outlines.
-- Characters have dot eyes, curved mouths, and rosy cheek ellipses; shapes
-  overlap and nest. Small and charming (a sleepy baby, a tiny moon, a steaming
-  bowl), each illustration living in its own color family.
+The bear is Cleo's mascot and the face of the product. One cast of bears carries
+every app: the same character, drawn doing whatever the moment calls for —
+sleeping, holding a bottle, standing on a scale, waving hello.
+
+**The house style is textured terracotta.** All new illustration is drawn this
+way:
+
+- A warm terracotta body (around `#E79464`), not pink and not glossy.
+- A visible paper-grain texture over the fill — the art should look printed,
+  not vector-slick.
+- Cream ear insets and muzzle, rosy matte cheeks, soft brown eyes with a single
+  highlight dot.
+- Filled, rounded shapes with soft internal shading and no hard outlines; shapes
+  overlap and nest. Props stay small and charming (a tiny moon, a steaming bowl),
+  each illustration living in its own color family.
+- Transparent background, square canvas, 1024×1024 for characters and objects;
+  activity icons are 270×270.
+
+**Legacy glossy-pink art.** An earlier generation of bears is flat pink
+(around `#FD9572`), glossy, and untextured, with large solid-black eyes. It is
+off-brand and being phased out. Those assets are marked `"style":
+"legacy-glossy"` in the manifest and badged on the style guide. Don't reach for
+one when a textured equivalent exists, and don't draw new art in that style.
+
+**One bear per idea.** The registry is the source of truth: there is exactly one
+`brush-teeth` and one `nap-bear`, and every app pulls that same file rather than
+keeping its own copy. If an app needs a bear that doesn't exist yet, add it here
+first.
+
 - Real content over lorem ipsum; product shown calm and uncluttered.
 
 ## Do / Don't

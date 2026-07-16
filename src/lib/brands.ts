@@ -158,6 +158,12 @@ export interface AssetManifestEntry {
   description?: string;
   /** Intended background, e.g. "light" | "dark" | "any". */
   background?: string;
+  /**
+   * Which illustration style the art is drawn in. Assets marked
+   * "legacy-glossy" are off-brand and awaiting a redraw — prefer a
+   * "textured-terracotta" alternative when one exists.
+   */
+  style?: string;
 }
 
 /** A manifest entry resolved with its public URL and derived mime type. */
