@@ -46,7 +46,7 @@ The endpoint is served at **`/mcp`** (stateless, read-only).
 {
   "mcpServers": {
     "brand-registry": {
-      "url": "https://<your-deployment>/mcp"
+      "url": "https://brands.scottwittrock.com/mcp"
     }
   }
 }
