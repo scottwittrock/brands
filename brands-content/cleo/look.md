@@ -60,11 +60,18 @@ Cleo uses a two-font system, plus a serif reserved for editorial moments.
 - Corners are softly rounded everywhere. Nothing sharp; nothing clinical.
 
 **Logo files.** The registry ships the ready-to-use marks as brand assets: the
-primary `cleo.` wordmark, the rounded-square app icon, and per-product wordmarks
-(`cleo track.`, `cleo routine.`, `cleo plan.`, `cleo connect.`). Alongside them
-sits the full illustration library — the bear cast, product objects, and Routine
-activity icons. Everything is listed on the style guide and available over MCP
-via `get_brand_assets`.
+primary `cleo.` wordmark and per-product wordmarks (`cleo track.`,
+`cleo routine.`, `cleo plan.`, `cleo connect.`). Alongside them sits the full
+illustration library — the bear cast, product objects, and Routine activity
+icons. Everything is listed on the style guide and available over MCP via
+`get_brand_assets`.
+
+**The app mark is the bear face.** Cleo's icon is the bear's head — peach, eyes
+closed, cream muzzle — centered on a Sage tile. Not a letterform: the brand is
+never marked with an abstract "c" or monogram. Each product extends the mark by
+swapping in that app's bear doing its thing (Track writes at a desk, Routine
+brushes its teeth, Connect holds a microphone, Quest raises binoculars), always
+on a solid Sage or Cream tile with the bear filling most of the square.
 
 ## Space & layout
 

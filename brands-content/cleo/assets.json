@@ -8,13 +8,6 @@
       "background": "light"
     },
     {
-      "file": "icon.svg",
-      "name": "App icon / mark",
-      "kind": "icon",
-      "description": "Rounded-square Sage mark with a cream 'c' and peach period, for avatars, favicons, and app tiles.",
-      "background": "any"
-    },
-    {
       "file": "wordmark-track.svg",
       "name": "Cleo Track wordmark",
       "kind": "logo",
@@ -43,6 +36,46 @@
       "background": "light"
     },
     {
+      "file": "app-icon.png",
+      "name": "App icon / bear mark",
+      "kind": "icon",
+      "description": "The Cleo bear face on Sage \u2014 the primary app mark. Use for avatars, favicons, and app tiles.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "app-icon-track.png",
+      "name": "Cleo Track app icon",
+      "kind": "icon",
+      "description": "Bear writing at a desk on Sage. The shipping Cleo Track iOS icon.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "app-icon-routine.png",
+      "name": "Cleo Routine app icon",
+      "kind": "icon",
+      "description": "Bear brushing its teeth on Cream. The shipping Cleo Routines iOS icon.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "app-icon-connect.png",
+      "name": "Cleo Connect app icon",
+      "kind": "icon",
+      "description": "Bear with a microphone on Cream. The shipping Cleo Voice/Connect iOS icon.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "app-icon-quest.png",
+      "name": "Cleo Quest app icon",
+      "kind": "icon",
+      "description": "Bear with binoculars on Sage. The shipping Cleo Quest iOS icon.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
       "file": "after-school-routine.png",
       "name": "After School Routine",
       "kind": "activity-icon",
@@ -55,13 +88,6 @@
       "name": "Any Time Routine",
       "kind": "activity-icon",
       "description": "Activity icon for Cleo Routine step lists.",
-      "background": "any"
-    },
-    {
-      "file": "app-icon-quest.png",
-      "name": "App Icon Quest",
-      "kind": "object",
-      "description": "Cleo Quest app icon \u2014 bear with binoculars on sage.",
       "background": "any"
     },
     {
