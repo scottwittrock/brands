@@ -54,6 +54,32 @@ export const defaultTheme: BrandTheme = {
 };
 
 export const themes: Record<string, BrandTheme> = {
+  cleo: {
+    vars: {
+      "--b-bg": "#faf7f2",
+      "--b-surface": "#f3f0eb",
+      "--b-fg": "#3d4a52",
+      "--b-muted": "#7c8790",
+      "--b-primary": "#a8c5a0",
+      "--b-on-primary": "#ffffff",
+      "--b-accent": "#f4a97f",
+      "--b-border": "#ddd4c8",
+      "--b-radius": "16px",
+      "--b-font-heading": "'Nunito', ui-sans-serif, system-ui, sans-serif",
+      "--b-font-body": "'DM Sans', ui-sans-serif, system-ui, sans-serif",
+    },
+    palette: [
+      { name: "Sage Green", hex: "#a8c5a0", role: "Primary" },
+      { name: "Deep Sage", hex: "#8ab082", role: "Hover" },
+      { name: "Warm Peach", hex: "#f4a97f", role: "Accent" },
+      { name: "Slate", hex: "#3d4a52", role: "Text" },
+      { name: "Cream", hex: "#faf7f2", role: "Background" },
+      { name: "Linen", hex: "#f3f0eb", role: "Surface" },
+      { name: "Warm Border", hex: "#ddd4c8", role: "Border" },
+    ],
+    typeNote:
+      "Nunito headings · DM Sans body · rounded, warm, generous white space.",
+  },
   "scott-wittrock": {
     vars: {
       "--b-bg": "#f2f4f7",
