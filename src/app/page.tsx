@@ -78,7 +78,7 @@ export default function Home() {
           <code className="code">{`{
   "mcpServers": {
     "brand-registry": {
-      "url": "https://<your-deployment>/mcp"
+      "url": "https://brands.scottwittrock.com/mcp"
     }
   }
 }`}</code>
