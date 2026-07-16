@@ -5,10 +5,12 @@ import { notFound } from "next/navigation";
 import {
   getAspect,
   getBrandSummary,
+  listAssets,
   listBrandSlugs,
 } from "@/lib/brands";
 import { getTheme } from "@/lib/themes";
 import { Markdown } from "@/components/showcase/Markdown";
+import { BrandAssets } from "@/components/showcase/BrandAssets";
 import { Palette, SampleUI, TypeScale } from "@/components/showcase/Showcase";
 
 /** Statically generate one page per brand at build time. */
@@ -52,6 +54,7 @@ export default async function BrandPage({
   const tagline = getTagline(slug);
   const look = getAspect(slug, "look");
   const voice = getAspect(slug, "voice");
+  const assets = listAssets(slug);
 
   return (
     <main className="showcase" style={theme.vars as CSSProperties}>
@@ -62,6 +65,7 @@ export default async function BrandPage({
           {tagline && <p>{tagline}</p>}
         </header>
 
+        <BrandAssets slug={slug} assets={assets} />
         <Palette theme={theme} />
         <TypeScale theme={theme} />
         <SampleUI name={brand.name} />

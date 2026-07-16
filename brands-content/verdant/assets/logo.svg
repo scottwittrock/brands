@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="96" viewBox="0 0 340 96" role="img" aria-label="Verdant logo">
+  <g transform="translate(8,16)">
+    <rect width="64" height="64" rx="16" fill="#2f5d3a"/>
+    <path d="M32 50 C 27 40, 27 27, 40 18 C 39 31, 37 41, 32 50 Z" fill="#f0e9dc"/>
+    <path d="M32 50 C 29 42, 23 37, 16 36 C 24 36, 31 40, 32 50 Z" fill="#c1663f"/>
+    <rect x="30" y="40" width="3" height="12" rx="1.5" fill="#f0e9dc"/>
+  </g>
+  <text x="92" y="60" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="40" font-weight="600" letter-spacing="0.5" fill="#2f5d3a">Verdant</text>
+</svg>
