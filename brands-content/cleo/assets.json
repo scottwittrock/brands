@@ -1,0 +1,1103 @@
+{
+  "assets": [
+    {
+      "file": "logo.svg",
+      "name": "Primary wordmark",
+      "kind": "logo",
+      "description": "The parent 'cleo.' wordmark \u2014 always lowercase, DM Sans Bold in Slate with a Sage Green period. Use on Cream or light backgrounds.",
+      "background": "light"
+    },
+    {
+      "file": "wordmark-track.svg",
+      "name": "Cleo Track wordmark",
+      "kind": "logo",
+      "description": "Product lockup 'cleo track.' \u2014 lowercase, Slate with the Sage period. Use on light backgrounds.",
+      "background": "light"
+    },
+    {
+      "file": "wordmark-routine.svg",
+      "name": "Cleo Routine wordmark",
+      "kind": "logo",
+      "description": "Product lockup 'cleo routine.' \u2014 lowercase, Slate with the Sage period. Use on light backgrounds.",
+      "background": "light"
+    },
+    {
+      "file": "wordmark-plan.svg",
+      "name": "Cleo Plan wordmark",
+      "kind": "logo",
+      "description": "Product lockup 'cleo plan.' \u2014 lowercase, Slate with the Sage period. Use on light backgrounds.",
+      "background": "light"
+    },
+    {
+      "file": "wordmark-connect.svg",
+      "name": "Cleo Connect wordmark",
+      "kind": "logo",
+      "description": "Product lockup 'cleo connect.' \u2014 lowercase, Slate with the Sage period. Use on light backgrounds.",
+      "background": "light"
+    },
+    {
+      "file": "app-icon.png",
+      "name": "App icon / bear mark",
+      "kind": "icon",
+      "description": "The Cleo bear face on Sage \u2014 the primary app mark. Use for avatars, favicons, and app tiles.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "app-icon-track.png",
+      "name": "Cleo Track app icon",
+      "kind": "icon",
+      "description": "Bear writing at a desk on Sage. The shipping Cleo Track iOS icon.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "app-icon-routine.png",
+      "name": "Cleo Routine app icon",
+      "kind": "icon",
+      "description": "Bear brushing its teeth on Cream. The shipping Cleo Routines iOS icon.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "app-icon-connect.png",
+      "name": "Cleo Connect app icon",
+      "kind": "icon",
+      "description": "Bear with a microphone on Cream. The shipping Cleo Voice/Connect iOS icon.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "app-icon-quest.png",
+      "name": "Cleo Quest app icon",
+      "kind": "icon",
+      "description": "Bear with binoculars on Sage. The shipping Cleo Quest iOS icon.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "after-school-routine.png",
+      "name": "After School Routine",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "afterschool"
+    },
+    {
+      "file": "any-time-routine.png",
+      "name": "Any Time Routine",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "apple.png",
+      "name": "Apple",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any"
+    },
+    {
+      "file": "assistant-bear.png",
+      "name": "Assistant Bear",
+      "kind": "illustration",
+      "description": "Cleo the assistant, waving with a sparkle speech bubble. Use for AI/assistant moments.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "backpack.png",
+      "name": "Backpack",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "afterschool",
+      "sameArtAs": "routine-afterschool.png"
+    },
+    {
+      "file": "ball.png",
+      "name": "Ball",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any"
+    },
+    {
+      "file": "banana.png",
+      "name": "Banana",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any"
+    },
+    {
+      "file": "bath-bear.png",
+      "name": "Bath Bear",
+      "kind": "illustration",
+      "description": "Bear in a bubble bath. Bath-time logging.",
+      "background": "any",
+      "style": "textured-terracotta",
+      "cluster": "bath"
+    },
+    {
+      "file": "bath-time.png",
+      "name": "Bath Time",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "bath"
+    },
+    {
+      "file": "bedtime-routine.png",
+      "name": "Bedtime Routine",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "evening"
+    },
+    {
+      "file": "blanket.png",
+      "name": "Blanket",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any"
+    },
+    {
+      "file": "book.png",
+      "name": "Book",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any",
+      "cluster": "reading"
+    },
+    {
+      "file": "bottle-bear.png",
+      "name": "Bottle Bear",
+      "kind": "illustration",
+      "description": "Bear holding a bottle. Bottle feeds. LEGACY glossy-pink style \u2014 pending redraw in the textured terracotta style.",
+      "background": "any",
+      "style": "legacy-glossy",
+      "cluster": "bottle"
+    },
+    {
+      "file": "bottle.png",
+      "name": "Bottle",
+      "kind": "object",
+      "description": "A baby bottle object.",
+      "background": "any",
+      "cluster": "bottle"
+    },
+    {
+      "file": "boxed-lunch.png",
+      "name": "Boxed Lunch",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "lunch"
+    },
+    {
+      "file": "breakfast.png",
+      "name": "Breakfast",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "brush-hair.png",
+      "name": "Brush Hair",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "brushing"
+    },
+    {
+      "file": "brush-teeth.png",
+      "name": "Brush Teeth",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "brushing"
+    },
+    {
+      "file": "caregiver-link-bear.png",
+      "name": "Caregiver Link Bear",
+      "kind": "illustration",
+      "description": "Bear with a phone and link icon. Inviting or linking a caregiver.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "celebrate-confetti.png",
+      "name": "Celebrate Confetti",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any",
+      "cluster": "celebrate"
+    },
+    {
+      "file": "celebrate-jump.png",
+      "name": "Celebrate Jump",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any",
+      "cluster": "celebrate"
+    },
+    {
+      "file": "celebrate-medal.png",
+      "name": "Celebrate Medal",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any",
+      "cluster": "celebrate"
+    },
+    {
+      "file": "celebrate-star.png",
+      "name": "Celebrate Star",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any",
+      "cluster": "celebrate"
+    },
+    {
+      "file": "celebrate-trophy.png",
+      "name": "Celebrate Trophy",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any",
+      "cluster": "celebrate"
+    },
+    {
+      "file": "celebration-bear.png",
+      "name": "Celebration Bear",
+      "kind": "illustration",
+      "description": "Bear cheering with confetti. Milestones and streaks. LEGACY glossy-pink style \u2014 pending redraw in the textured terracotta style.",
+      "background": "any",
+      "style": "legacy-glossy",
+      "cluster": "celebrate"
+    },
+    {
+      "file": "checklist-bear.png",
+      "name": "Checklist Bear",
+      "kind": "illustration",
+      "description": "Bear ticking off a checklist. Completed tasks.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "chef-bear.png",
+      "name": "Chef Bear",
+      "kind": "illustration",
+      "description": "Bear cooking at a pot. Meals and recipes.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "chop-fruit.png",
+      "name": "Chop Fruit",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "crayon.png",
+      "name": "Crayon",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any"
+    },
+    {
+      "file": "croissant.png",
+      "name": "Croissant",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "cup.png",
+      "name": "Cup",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any",
+      "cluster": "cup"
+    },
+    {
+      "file": "dishes.png",
+      "name": "Dishes",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "downstairs.png",
+      "name": "Downstairs",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "eating-bear.png",
+      "name": "Eating Bear",
+      "kind": "illustration",
+      "description": "Bear eating from a bowl. Solids and mealtimes.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "egg-bear.png",
+      "name": "Egg Bear",
+      "kind": "illustration",
+      "description": "Bear with a boiled egg. Food and nutrition.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "empty-state-bear.png",
+      "name": "Empty State Bear",
+      "kind": "illustration",
+      "description": "Puzzled bear with a question mark. Empty states. LEGACY glossy-pink style \u2014 pending redraw in the textured terracotta style.",
+      "background": "any",
+      "style": "legacy-glossy"
+    },
+    {
+      "file": "evening-routine.png",
+      "name": "Evening Routine",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "evening",
+      "sameArtAs": "routine-evening.png"
+    },
+    {
+      "file": "family-meal-bears.png",
+      "name": "Family Meal Bears",
+      "kind": "illustration",
+      "description": "Parent and baby bear sharing a meal at a table. Family mealtimes.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "feed-the-dog.png",
+      "name": "Feed The Dog",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "get-dressed.png",
+      "name": "Get Dressed",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "get-treat.png",
+      "name": "Get Treat",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "go-potty.png",
+      "name": "Go Potty",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "potty"
+    },
+    {
+      "file": "go-to-sleep.png",
+      "name": "Go To Sleep",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "growth-bear.png",
+      "name": "Growth Bear",
+      "kind": "illustration",
+      "description": "Bear beside a rising bar chart. Growth tracking. LEGACY glossy-pink style \u2014 pending redraw in the textured terracotta style.",
+      "background": "any",
+      "style": "legacy-glossy",
+      "cluster": "growth"
+    },
+    {
+      "file": "guardian-bear.png",
+      "name": "Guardian Bear",
+      "kind": "illustration",
+      "description": "Bear holding a shield and key. Privacy, security, and permissions.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "hairbrush.png",
+      "name": "Hairbrush",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any",
+      "cluster": "brushing"
+    },
+    {
+      "file": "hand-heart.png",
+      "name": "Hand Heart",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "hat.png",
+      "name": "Hat",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any"
+    },
+    {
+      "file": "headphones.png",
+      "name": "Headphones",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "hug-baby.png",
+      "name": "Hug Baby",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "hug"
+    },
+    {
+      "file": "hug.png",
+      "name": "Hug",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "hug"
+    },
+    {
+      "file": "insights-bear.png",
+      "name": "Insights Bear",
+      "kind": "illustration",
+      "description": "Bear waving next to a bar chart. Insights and reports.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "jacket.png",
+      "name": "Jacket",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "dressing"
+    },
+    {
+      "file": "key.png",
+      "name": "Key",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any"
+    },
+    {
+      "file": "kiss.png",
+      "name": "Kiss",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "leave.png",
+      "name": "Leave",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "listen-to-story.png",
+      "name": "Listen To Story",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "loading-sleepy-bear.png",
+      "name": "Loading Sleepy Bear",
+      "kind": "illustration",
+      "description": "Sleeping bear with zzz. Loading states. LEGACY glossy-pink style \u2014 pending redraw in the textured terracotta style.",
+      "background": "any",
+      "style": "legacy-glossy"
+    },
+    {
+      "file": "lunch.png",
+      "name": "Lunch",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "lunch"
+    },
+    {
+      "file": "make-bed.png",
+      "name": "Make Bed",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "medicine-bar.png",
+      "name": "Medicine Bar",
+      "kind": "object",
+      "description": "Medicine dose object \u2014 bar.",
+      "background": "any",
+      "cluster": "medicine"
+    },
+    {
+      "file": "medicine-bear.png",
+      "name": "Medicine Bear",
+      "kind": "illustration",
+      "description": "Bear with a dropper. Medicine doses. LEGACY glossy-pink style \u2014 pending redraw in the textured terracotta style.",
+      "background": "any",
+      "style": "legacy-glossy",
+      "cluster": "medicine"
+    },
+    {
+      "file": "medicine-cup.png",
+      "name": "Medicine Cup",
+      "kind": "object",
+      "description": "Medicine dose object \u2014 cup.",
+      "background": "any",
+      "cluster": "medicine"
+    },
+    {
+      "file": "medicine-drink.png",
+      "name": "Medicine Drink",
+      "kind": "object",
+      "description": "Medicine dose object \u2014 drink.",
+      "background": "any",
+      "cluster": "medicine"
+    },
+    {
+      "file": "medicine-dropper.png",
+      "name": "Medicine Dropper",
+      "kind": "object",
+      "description": "Medicine dose object \u2014 dropper.",
+      "background": "any",
+      "cluster": "medicine"
+    },
+    {
+      "file": "medicine-pill.png",
+      "name": "Medicine Pill",
+      "kind": "object",
+      "description": "Medicine dose object \u2014 pill.",
+      "background": "any",
+      "cluster": "medicine"
+    },
+    {
+      "file": "morning-routine.png",
+      "name": "Morning Routine",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "morning",
+      "sameArtAs": "routine-morning.png"
+    },
+    {
+      "file": "mug.png",
+      "name": "Mug",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any",
+      "cluster": "cup"
+    },
+    {
+      "file": "nap-bear.png",
+      "name": "Nap Bear",
+      "kind": "illustration",
+      "description": "Bear curled up asleep. Naps and sleep. LEGACY glossy-pink style \u2014 pending redraw in the textured terracotta style.",
+      "background": "any",
+      "style": "legacy-glossy"
+    },
+    {
+      "file": "night-bear.png",
+      "name": "Night Bear",
+      "kind": "illustration",
+      "description": "Bear with teddy under a moon and stars. Night-time and bedtime.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "notes-bear.png",
+      "name": "Notes Bear",
+      "kind": "illustration",
+      "description": "Bear writing notes with a pencil. Notes and journaling. LEGACY glossy-pink style \u2014 pending redraw in the textured terracotta style.",
+      "background": "any",
+      "style": "legacy-glossy"
+    },
+    {
+      "file": "nursing-bear.png",
+      "name": "Nursing Bear",
+      "kind": "illustration",
+      "description": "Parent bear cradling and nursing a baby bear. Nursing sessions.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "open-bottle-bear.png",
+      "name": "Open Bottle Bear",
+      "kind": "illustration",
+      "description": "Bear holding an open bottle. Bottle prep.",
+      "background": "any",
+      "style": "textured-terracotta",
+      "cluster": "bottle"
+    },
+    {
+      "file": "pajamas.png",
+      "name": "Pajamas",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "pants.png",
+      "name": "Pants",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "partner-sync-bears.png",
+      "name": "Partner Sync Bears",
+      "kind": "illustration",
+      "description": "Two bears with phones showing the same check. Partner sync.",
+      "background": "any",
+      "style": "textured-terracotta",
+      "cluster": "two-bears"
+    },
+    {
+      "file": "pediatrician-bear.png",
+      "name": "Pediatrician Bear",
+      "kind": "illustration",
+      "description": "Bear with a stethoscope and chart. Doctor visits and health records.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "pee-bear.png",
+      "name": "Pee Bear",
+      "kind": "illustration",
+      "description": "Bear in a wet diaper. Pee diaper changes. LEGACY glossy-pink style \u2014 pending redraw in the textured terracotta style.",
+      "background": "any",
+      "style": "legacy-glossy",
+      "cluster": "potty-pee"
+    },
+    {
+      "file": "pencil.png",
+      "name": "Pencil",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any"
+    },
+    {
+      "file": "pillow.png",
+      "name": "Pillow",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any"
+    },
+    {
+      "file": "pizza.png",
+      "name": "Pizza",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "plan-bear.png",
+      "name": "Plan Bear",
+      "kind": "illustration",
+      "description": "Bear with a calendar grid and pencil. Planning and schedules.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "plate.png",
+      "name": "Plate",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any"
+    },
+    {
+      "file": "play.png",
+      "name": "Play",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "playground.png",
+      "name": "Playground",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "poop-bear.png",
+      "name": "Poop Bear",
+      "kind": "illustration",
+      "description": "Bear straining in a diaper. Poop diaper changes. LEGACY glossy-pink style \u2014 pending redraw in the textured terracotta style.",
+      "background": "any",
+      "style": "legacy-glossy",
+      "cluster": "potty-poop"
+    },
+    {
+      "file": "popsicle.png",
+      "name": "Popsicle",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "potty-bear.png",
+      "name": "Potty Bear",
+      "kind": "illustration",
+      "description": "Bear sitting on a potty. Potty training.",
+      "background": "any",
+      "style": "textured-terracotta",
+      "cluster": "potty"
+    },
+    {
+      "file": "potty-both-bear.png",
+      "name": "Potty Both Bear",
+      "kind": "illustration",
+      "description": "Potty illustration for both pee and poop.",
+      "background": "any",
+      "style": "textured-terracotta",
+      "cluster": "potty"
+    },
+    {
+      "file": "potty-pee-bear.png",
+      "name": "Potty Pee Bear",
+      "kind": "illustration",
+      "description": "Potty illustration for pee.",
+      "background": "any",
+      "style": "textured-terracotta",
+      "cluster": "potty-pee"
+    },
+    {
+      "file": "potty-poop-bear.png",
+      "name": "Potty Poop Bear",
+      "kind": "illustration",
+      "description": "Potty illustration for poop.",
+      "background": "any",
+      "style": "textured-terracotta",
+      "cluster": "potty-poop"
+    },
+    {
+      "file": "pouches.png",
+      "name": "Pouches",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "pumping-bear.png",
+      "name": "Pumping Bear",
+      "kind": "illustration",
+      "description": "Bear with a breast pump and bottle. Pumping sessions.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "read-a-book.png",
+      "name": "Read A Book",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "reading"
+    },
+    {
+      "file": "ride-bike.png",
+      "name": "Ride Bike",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "routine-afterschool.png",
+      "name": "Routine Afterschool",
+      "kind": "object",
+      "description": "Routine Afterschool illustration.",
+      "background": "any",
+      "cluster": "afterschool",
+      "sameArtAs": "backpack.png"
+    },
+    {
+      "file": "routine-bear.png",
+      "name": "Routine Bear",
+      "kind": "illustration",
+      "description": "Bear at a desk with a pencil. Routines.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "routine-evening.png",
+      "name": "Routine Evening",
+      "kind": "object",
+      "description": "Routine Evening illustration.",
+      "background": "any",
+      "cluster": "evening",
+      "sameArtAs": "evening-routine.png"
+    },
+    {
+      "file": "routine-morning.png",
+      "name": "Routine Morning",
+      "kind": "object",
+      "description": "Routine Morning illustration.",
+      "background": "any",
+      "cluster": "morning",
+      "sameArtAs": "morning-routine.png"
+    },
+    {
+      "file": "scooter.png",
+      "name": "Scooter",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "shirt.png",
+      "name": "Shirt",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "shoe.png",
+      "name": "Shoe",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any"
+    },
+    {
+      "file": "shoes-and-jacket.png",
+      "name": "Shoes And Jacket",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "dressing"
+    },
+    {
+      "file": "shoes.png",
+      "name": "Shoes",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "dressing"
+    },
+    {
+      "file": "sit-on-potty.png",
+      "name": "Sit On Potty",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any",
+      "cluster": "potty"
+    },
+    {
+      "file": "snack.png",
+      "name": "Snack",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "sock.png",
+      "name": "Sock",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any"
+    },
+    {
+      "file": "socks.png",
+      "name": "Socks",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "spoon.png",
+      "name": "Spoon",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any"
+    },
+    {
+      "file": "status-done.png",
+      "name": "Status Done",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "status-not-done.png",
+      "name": "Status Not Done",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "summary-bear.png",
+      "name": "Summary Bear",
+      "kind": "illustration",
+      "description": "Bear holding a clipboard of ticked items. Daily summaries.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "take-a-shower.png",
+      "name": "Take A Shower",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "tap-bear.png",
+      "name": "Tap Bear",
+      "kind": "illustration",
+      "description": "Bear reaching out to tap. Onboarding and tap hints.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "teddy-bear.png",
+      "name": "Teddy Bear",
+      "kind": "illustration",
+      "description": "A plain seated teddy bear. Generic toy/teddy object.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "timer-bear.png",
+      "name": "Timer Bear",
+      "kind": "illustration",
+      "description": "Bear hugging a stopwatch. Timers and durations. LEGACY glossy-pink style \u2014 pending redraw in the textured terracotta style.",
+      "background": "any",
+      "style": "legacy-glossy"
+    },
+    {
+      "file": "toothbrush.png",
+      "name": "Toothbrush",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any",
+      "cluster": "brushing"
+    },
+    {
+      "file": "towel.png",
+      "name": "Towel",
+      "kind": "object",
+      "description": "Object illustration for the Cleo Quest find-it game.",
+      "background": "any"
+    },
+    {
+      "file": "track-bear.png",
+      "name": "Track Bear",
+      "kind": "illustration",
+      "description": "Bear waving on a sage background. Cleo Track product mark. LEGACY glossy-pink style \u2014 pending redraw in the textured terracotta style.",
+      "background": "any",
+      "style": "legacy-glossy"
+    },
+    {
+      "file": "trip-bear.png",
+      "name": "Trip Bear",
+      "kind": "illustration",
+      "description": "Bear with binoculars. Trips and outings.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "twin-bears.png",
+      "name": "Twin Bears",
+      "kind": "illustration",
+      "description": "Two bears side by side. Twins and multiple children.",
+      "background": "any",
+      "style": "textured-terracotta",
+      "cluster": "two-bears"
+    },
+    {
+      "file": "underwear.png",
+      "name": "Underwear",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "unicorn.png",
+      "name": "Unicorn",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "upstairs.png",
+      "name": "Upstairs",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "walk-the-dog.png",
+      "name": "Walk The Dog",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "wash-hands.png",
+      "name": "Wash Hands",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "watch-bear.png",
+      "name": "Watch Bear",
+      "kind": "illustration",
+      "description": "Bear wearing a watch. Apple Watch and wearables.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "watch-tv.png",
+      "name": "Watch Tv",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "wave-goodbye.png",
+      "name": "Wave Goodbye",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    },
+    {
+      "file": "weight-bear.png",
+      "name": "Weight Bear",
+      "kind": "illustration",
+      "description": "Bear standing on a scale. Weight check-ins.",
+      "background": "any",
+      "style": "textured-terracotta",
+      "cluster": "growth"
+    },
+    {
+      "file": "welcome-bear.png",
+      "name": "Welcome Bear",
+      "kind": "illustration",
+      "description": "Bear with binoculars, welcoming. Cleo Quest welcome.",
+      "background": "any",
+      "style": "textured-terracotta"
+    },
+    {
+      "file": "wipe.png",
+      "name": "Wipe",
+      "kind": "activity-icon",
+      "description": "Activity icon for Cleo Routine step lists.",
+      "background": "any"
+    }
+  ]
+}

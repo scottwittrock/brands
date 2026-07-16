@@ -8,7 +8,7 @@ import { getBaseUrl } from "./site";
  * The source of truth is the `brands-content/` directory at the repo root. Each
  * subdirectory is one brand (its folder name is the slug) and may contain any of
  * the aspect files below as prose markdown. This module reads that directory and
- * is shared by both the showcase pages and the MCP endpoint.
+ * is shared by both the style guide pages and the MCP endpoint.
  */
 
 export const ASPECTS = ["overview", "look", "voice"] as const;
@@ -158,6 +158,24 @@ export interface AssetManifestEntry {
   description?: string;
   /** Intended background, e.g. "light" | "dark" | "any". */
   background?: string;
+  /**
+   * Which illustration style the art is drawn in. Assets marked
+   * "legacy-glossy" are off-brand and awaiting a redraw — prefer a
+   * "textured-terracotta" alternative when one exists.
+   */
+  style?: string;
+  /**
+   * Assets that depict the same idea share a cluster id, so overlapping art can
+   * be reviewed together and eventually narrowed to one. Absent once an asset
+   * has no siblings.
+   */
+  cluster?: string;
+  /**
+   * Set when another asset is the *same drawing* under a different name (an
+   * export at a different size), rather than merely a similar one. Names the
+   * counterpart file — one of the pair should win.
+   */
+  sameArtAs?: string;
 }
 
 /** A manifest entry resolved with its public URL and derived mime type. */
