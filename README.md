@@ -29,13 +29,16 @@ new brands are added by dropping in files (plus a small visual theme entry).
 The endpoint is served at **`/mcp`** (stateless, read-only).
 
 **Tools**
-- `list_brands` — every brand's slug, name, and available aspects. Call first.
+- `list_brands` — every brand's slug, name, available aspects, and asset count. Call first.
 - `get_brand({ brand, aspect? })` — a brand's markdown. `aspect` is
   `overview` | `look` | `voice` | `all` (default `all`).
+- `get_brand_assets({ brand })` — a brand's image assets as public URLs with
+  descriptions, so a model can reference or embed them.
 
 **Resources**
-- `brand://{slug}/{aspect}` — one markdown document per brand/aspect, enumerable
-  via `resources/list`.
+- `brand://{slug}/{aspect}` — one markdown document per brand/aspect.
+- `brand://{slug}/assets` — JSON manifest of the brand's image URLs (present only
+  when the brand has assets). All enumerable via `resources/list`.
 
 ### Connect a client
 
@@ -60,6 +63,41 @@ Locally the URL is `http://localhost:3000/mcp`.
 
 That's it — the home gallery, the `/brands/<slug>` page, and the MCP tools/resources
 all pick it up automatically.
+
+## Add brand images
+
+Images are served by URL (no base64). Per brand:
+
+1. Drop image files in `brands-content/<slug>/assets/` (SVG, PNG, JPG, WebP, AVIF, GIF).
+2. Describe them in `brands-content/<slug>/assets.json` so clients know what each
+   one is:
+
+   ```json
+   {
+     "assets": [
+       {
+         "file": "logo.svg",
+         "name": "Primary logo",
+         "kind": "logo",
+         "description": "Full-color lockup; use on light backgrounds.",
+         "background": "light"
+       }
+     ]
+   }
+   ```
+
+Each file is served at `/brands/<slug>/assets/<file>` and surfaced through
+`get_brand_assets`, the `brand://<slug>/assets` resource, and the showcase page.
+Only files listed in `assets.json` are served (the manifest is an allowlist).
+
+### Absolute URLs — `PUBLIC_BASE_URL`
+
+The MCP hands clients **absolute** asset URLs, so the server needs to know its
+public origin:
+
+- On **Vercel**, `VERCEL_PROJECT_PRODUCTION_URL` is used automatically.
+- Otherwise set **`PUBLIC_BASE_URL`** (e.g. `https://brands.example.com`).
+- Local dev falls back to `http://localhost:3000`.
 
 ## Local development
 
