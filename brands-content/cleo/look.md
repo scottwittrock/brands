@@ -47,12 +47,16 @@ Cleo uses a two-font system, plus a serif reserved for editorial moments.
 
 ## Logo & wordmark
 
-- The wordmark is **"Cleo."** — title case, bold Slate text, with a **Sage Green
-  period** (`#A8C5A0`) at the same weight and size as the preceding letter.
+- The wordmark is always **lowercase** — **"cleo."** — in bold Slate text, with a
+  **Sage Green period** (`#A8C5A0`) at the same weight and size as the preceding
+  letter. It is set lowercase even though the brand name is capitalized (Cleo) in
+  running prose.
 - The wordmark always uses **DM Sans Bold** (the body font), not Nunito.
-- The parent brand is always **Cleo.** with the green period. Products extend it
-  in title case: **Cleo Track**, **Cleo Routine**, **Cleo Plan**, **Cleo
-  Connect**. The paid tier is **Cleo+** (never "Cleo Track+").
+- The parent brand wordmark is always **cleo.** with the green period. Products
+  extend it, lowercase: **cleo track.**, **cleo routine.**, **cleo plan.**,
+  **cleo connect.** The paid tier is **cleo+** (never "cleo track+"). In running
+  prose (not the wordmark), product names keep title case: Cleo Track, Cleo
+  Routine, Cleo Plan, Cleo Connect.
 - Corners are softly rounded everywhere. Nothing sharp; nothing clinical.
 
 ## Space & layout
