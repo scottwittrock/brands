@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
   // explicitly bundle the content directory into the serverless function output.
   outputFileTracingIncludes: {
     "/[transport]": ["./brands-content/**/*"],
+    // The asset route streams image bytes from brands-content at request time.
+    "/brands/[slug]/assets/[filename]": ["./brands-content/**/*"],
   },
 };
 

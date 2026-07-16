@@ -1,0 +1,18 @@
+{
+  "assets": [
+    {
+      "file": "logo.svg",
+      "name": "Primary logo",
+      "kind": "logo",
+      "description": "Full-color horizontal lockup (leaf mark + wordmark). Use on warm/light backgrounds.",
+      "background": "light"
+    },
+    {
+      "file": "icon.svg",
+      "name": "App icon / mark",
+      "kind": "icon",
+      "description": "Standalone rounded-square leaf mark for avatars, favicons, and app tiles.",
+      "background": "any"
+    }
+  ]
+}

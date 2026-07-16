@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { getBaseUrl } from "./site";
 
 /**
  * Brand content loader.
@@ -134,4 +135,119 @@ function interleave(sections: string[]): string[] {
     out.push(section);
   });
   return out;
+}
+
+/* ===========================================================================
+ * Brand assets (images)
+ *
+ * Images live in `brands-content/<slug>/assets/` and are described by an
+ * optional `brands-content/<slug>/assets.json` manifest. We serve them URL-only
+ * (see the route at app/brands/[slug]/assets/[filename]); `url` and `mimeType`
+ * are derived here, not stored in the manifest.
+ * ======================================================================== */
+
+/** One entry as authored in `assets.json`. */
+export interface AssetManifestEntry {
+  /** File name inside the brand's `assets/` folder, e.g. "logo.svg". */
+  file: string;
+  /** Human label, e.g. "Primary logo". */
+  name?: string;
+  /** Free-form category: logo, wordmark, icon, mark, palette-board, photo, … */
+  kind?: string;
+  /** What it is / how to use it. */
+  description?: string;
+  /** Intended background, e.g. "light" | "dark" | "any". */
+  background?: string;
+}
+
+/** A manifest entry resolved with its public URL and derived mime type. */
+export interface BrandAsset extends AssetManifestEntry {
+  url: string;
+  mimeType: string;
+}
+
+const MIME_BY_EXT: Record<string, string> = {
+  svg: "image/svg+xml",
+  png: "image/png",
+  jpg: "image/jpeg",
+  jpeg: "image/jpeg",
+  webp: "image/webp",
+  avif: "image/avif",
+  gif: "image/gif",
+};
+
+function mimeFor(file: string): string {
+  const ext = file.split(".").pop()?.toLowerCase() ?? "";
+  return MIME_BY_EXT[ext] ?? "application/octet-stream";
+}
+
+function assetsDir(slug: string): string {
+  return path.join(CONTENT_DIR, slug, "assets");
+}
+
+function manifestPath(slug: string): string {
+  return path.join(CONTENT_DIR, slug, "assets.json");
+}
+
+/** Read + parse a brand's assets.json, or [] if missing/invalid. */
+function readManifest(slug: string): AssetManifestEntry[] {
+  let raw: string;
+  try {
+    raw = fs.readFileSync(manifestPath(slug), "utf8");
+  } catch {
+    return [];
+  }
+  try {
+    const parsed = JSON.parse(raw) as { assets?: AssetManifestEntry[] };
+    return Array.isArray(parsed.assets) ? parsed.assets : [];
+  } catch {
+    return [];
+  }
+}
+
+function assetFileExists(slug: string, file: string): boolean {
+  try {
+    return fs.statSync(path.join(assetsDir(slug), file)).isFile();
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Resolved assets for a brand: manifest entries whose file actually exists,
+ * each with a derived public `url` and `mimeType`. Empty for unknown brands or
+ * brands with no manifest.
+ */
+export function listAssets(slug: string): BrandAsset[] {
+  if (!brandExists(slug)) return [];
+  const base = getBaseUrl();
+  return readManifest(slug)
+    .filter((entry) => entry.file && assetFileExists(slug, entry.file))
+    .map((entry) => ({
+      ...entry,
+      mimeType: mimeFor(entry.file),
+      url: `${base}/brands/${slug}/assets/${entry.file}`,
+    }));
+}
+
+export function hasAssets(slug: string): boolean {
+  return listAssets(slug).length > 0;
+}
+
+/**
+ * Resolve a request for a single asset file to a path on disk. Acts as an
+ * allowlist: only files named in the manifest (and present on disk) resolve, so
+ * arbitrary paths / traversal never reach the filesystem. Returns null otherwise.
+ */
+export function getAssetFile(
+  slug: string,
+  filename: string,
+): { path: string; mimeType: string } | null {
+  if (!brandExists(slug)) return null;
+  const listed = readManifest(slug).some((entry) => entry.file === filename);
+  if (!listed || !assetFileExists(slug, filename)) return null;
+  return {
+    path: path.join(assetsDir(slug), filename),
+    mimeType: mimeFor(filename),
+  };
 }
