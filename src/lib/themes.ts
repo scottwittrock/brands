@@ -54,6 +54,34 @@ export const defaultTheme: BrandTheme = {
 };
 
 export const themes: Record<string, BrandTheme> = {
+  "scott-wittrock": {
+    vars: {
+      "--b-bg": "#f2f4f7",
+      "--b-surface": "#ffffff",
+      "--b-fg": "#101828",
+      "--b-muted": "#797c83",
+      "--b-primary": "#0b7492",
+      "--b-on-primary": "#ffffff",
+      "--b-accent": "#0b7492",
+      "--b-border": "#e4e7ec",
+      "--b-radius": "12px",
+      "--b-font-heading":
+        "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif",
+      "--b-font-body":
+        "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif",
+    },
+    palette: [
+      { name: "Deep Teal", hex: "#0b7492", role: "Primary" },
+      { name: "Teal Deep", hex: "#085d75", role: "Hover" },
+      { name: "Ink", hex: "#101828", role: "Text" },
+      { name: "Slate", hex: "#797c83", role: "Muted" },
+      { name: "Notepad", hex: "#fffbe8", role: "Highlight" },
+      { name: "Cool Mist", hex: "#f2f4f7", role: "Background" },
+      { name: "Hairline", hex: "#e4e7ec", role: "Border" },
+    ],
+    typeNote:
+      "System UI stack · 600 headings · large, readable body for long-form insights.",
+  },
   nimbus: {
     vars: {
       "--b-bg": "#ffffff",
