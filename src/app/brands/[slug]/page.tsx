@@ -60,9 +60,12 @@ export default async function BrandPage({
     <main className="showcase" style={theme.vars as CSSProperties}>
       <div className="wrap">
         <header className="sc-hero">
-          <span className="sc-eyebrow">Brand showcase</span>
+          <span className="sc-eyebrow">Brand style guide</span>
           <h1>{brand.name}</h1>
           {tagline && <p>{tagline}</p>}
+          <Link className="sc-example-link" href={`/brands/${slug}/example`}>
+            View example landing page →
+          </Link>
         </header>
 
         <BrandAssets slug={slug} assets={assets} />

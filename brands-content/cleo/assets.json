@@ -1,0 +1,46 @@
+{
+  "assets": [
+    {
+      "file": "logo.svg",
+      "name": "Primary wordmark",
+      "kind": "logo",
+      "description": "The parent 'cleo.' wordmark — always lowercase, DM Sans Bold in Slate with a Sage Green period. Use on Cream or light backgrounds.",
+      "background": "light"
+    },
+    {
+      "file": "icon.svg",
+      "name": "App icon / mark",
+      "kind": "icon",
+      "description": "Rounded-square Sage mark with a cream 'c' and peach period, for avatars, favicons, and app tiles.",
+      "background": "any"
+    },
+    {
+      "file": "wordmark-track.svg",
+      "name": "Cleo Track wordmark",
+      "kind": "logo",
+      "description": "Product lockup 'cleo track.' — lowercase, Slate with the Sage period. Use on light backgrounds.",
+      "background": "light"
+    },
+    {
+      "file": "wordmark-routine.svg",
+      "name": "Cleo Routine wordmark",
+      "kind": "logo",
+      "description": "Product lockup 'cleo routine.' — lowercase, Slate with the Sage period. Use on light backgrounds.",
+      "background": "light"
+    },
+    {
+      "file": "wordmark-plan.svg",
+      "name": "Cleo Plan wordmark",
+      "kind": "logo",
+      "description": "Product lockup 'cleo plan.' — lowercase, Slate with the Sage period. Use on light backgrounds.",
+      "background": "light"
+    },
+    {
+      "file": "wordmark-connect.svg",
+      "name": "Cleo Connect wordmark",
+      "kind": "logo",
+      "description": "Product lockup 'cleo connect.' — lowercase, Slate with the Sage period. Use on light backgrounds.",
+      "background": "light"
+    }
+  ]
+}

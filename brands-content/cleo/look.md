@@ -59,6 +59,11 @@ Cleo uses a two-font system, plus a serif reserved for editorial moments.
   Routine, Cleo Plan, Cleo Connect.
 - Corners are softly rounded everywhere. Nothing sharp; nothing clinical.
 
+**Logo files.** The registry ships the ready-to-use marks as brand assets: the
+primary `cleo.` wordmark, the rounded-square app icon, and per-product wordmarks
+(`cleo track.`, `cleo routine.`, `cleo plan.`, `cleo connect.`). They are listed
+on the style guide and available over MCP via `get_brand_assets`.
+
 ## Space & layout
 
 - Generous white space is the brand. Screens breathe; nothing feels cluttered.
