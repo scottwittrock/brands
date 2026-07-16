@@ -59,6 +59,12 @@ Cleo uses a two-font system, plus a serif reserved for editorial moments.
   Routine, Cleo Plan, Cleo Connect.
 - Corners are softly rounded everywhere. Nothing sharp; nothing clinical.
 
+**The tagline is a lockup.** It reads **"With you for the everyday, cleo."** —
+the line resolves into the wordmark rather than sitting above or beside it, so
+the closing **cleo.** keeps its lowercase setting and Sage Green period even
+mid-sentence. Set it as one phrase; never capitalize the `cleo` or drop the
+comma before it.
+
 **Logo files.** The registry ships the ready-to-use marks as brand assets: the
 primary `cleo.` wordmark and per-product wordmarks (`cleo track.`,
 `cleo routine.`, `cleo plan.`, `cleo connect.`). Alongside them sits the full

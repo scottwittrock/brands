@@ -1,6 +1,6 @@
 # Cleo
 
-**Tagline:** Calm software for the chaos of new parenthood.
+**Tagline:** With you for the everyday, cleo.
 
 Cleo is a family of calm, beautifully designed apps that help parents navigate
 life with little ones. Each app is focused and polished — delight comes from
