@@ -63,9 +63,14 @@ export default async function BrandPage({
           <span className="sc-eyebrow">Brand style guide</span>
           <h1>{brand.name}</h1>
           {tagline && <p>{tagline}</p>}
-          <Link className="sc-example-link" href={`/brands/${slug}/example`}>
-            View example landing page →
-          </Link>
+          <div className="sc-hero-links">
+            <Link className="sc-example-link" href={`/brands/${slug}/example`}>
+              View example landing page →
+            </Link>
+            <Link className="sc-example-link" href={`/brands/${slug}/source`}>
+              View source markdown →
+            </Link>
+          </div>
         </header>
 
         <BrandAssets slug={slug} assets={assets} />
