@@ -93,7 +93,9 @@ export default function Home() {
       <footer className="site-footer">
         <div className="wrap">
           Brand Registry — an example MCP server serving brand guidelines.{" "}
-          {brands.length} brand{brands.length === 1 ? "" : "s"} registered.
+          {brands.length} brand{brands.length === 1 ? "" : "s"} registered. See a
+          brand applied to real pages in the{" "}
+          <Link href="/examples/scottwittrock">Scott Wittrock example sites</Link>.
         </div>
       </footer>
     </>
