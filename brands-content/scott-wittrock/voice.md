@@ -41,17 +41,18 @@ about / around" is a strength, not a hedge.
 
 ## The one-liner (bio / meta description)
 
-> Product manager, a decade close to AI — computer vision, visual search, and now
-> language models at Customer.io. I write about what changes for product people
-> when building software stops being the hard part.
+> Product manager and builder, a decade close to AI — computer vision, visual
+> search, now language models. I work at Customer.io and write about what changes
+> for product people when building software stops being the hard part.
 
 ## The longer "why" (About copy)
 
 > I've spent about a decade close to AI — from computer vision and visual search
-> to language models and the MCP server at Customer.io. The throughline is mobile
-> and developer experience: building for the people who build on top of you. The
-> longer I do this, the more I think the hard part was never the engineering —
-> it's choosing what deserves to exist.
+> to language models. At Customer.io I work on developer experience, the MCP
+> server included — building for the people who build on top of you, increasingly
+> agentic ones. The throughline is mobile and developer experience: the longer I
+> do this, the more I think the hard part was never the engineering — it's
+> choosing what deserves to exist.
 
 ## Six gut checks
 
