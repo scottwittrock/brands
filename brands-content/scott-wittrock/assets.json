@@ -2,16 +2,16 @@
   "assets": [
     {
       "file": "logo.svg",
-      "name": "Primary logo",
-      "kind": "logo",
-      "description": "Head for Product horizontal lockup (compass mark + wordmark + Scott Wittrock line). Use on light backgrounds.",
+      "name": "Wordmark (placeholder)",
+      "kind": "wordmark",
+      "description": "Teal dot + 'Scott Wittrock' set in Space Grotesk — the stand-in identity until the final mark exists. Use the 'Head for Product' wordmark for the publication. Light backgrounds.",
       "background": "light"
     },
     {
       "file": "icon.svg",
-      "name": "App icon / mark",
+      "name": "App icon / mark (placeholder)",
       "kind": "icon",
-      "description": "Standalone teal rounded-square compass mark for avatars, favicons, and app tiles.",
+      "description": "Placeholder mark: a filled deep-teal dot on a soft rounded square, for avatars, favicons, and app tiles. Drop in the real mark once it exists.",
       "background": "any"
     }
   ]

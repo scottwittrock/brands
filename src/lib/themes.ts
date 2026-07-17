@@ -64,23 +64,22 @@ export const themes: Record<string, BrandTheme> = {
       "--b-on-primary": "#ffffff",
       "--b-accent": "#0b7492",
       "--b-border": "#e4e7ec",
-      "--b-radius": "12px",
-      "--b-font-heading":
-        "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif",
-      "--b-font-body":
-        "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif",
+      "--b-radius": "16px",
+      "--b-font-heading": "'Space Grotesk', ui-sans-serif, system-ui, sans-serif",
+      "--b-font-body": "'Inter', ui-sans-serif, system-ui, sans-serif",
     },
     palette: [
-      { name: "Deep Teal", hex: "#0b7492", role: "Primary" },
-      { name: "Teal Deep", hex: "#085d75", role: "Hover" },
+      { name: "Deep Teal", hex: "#0b7492", role: "Accent" },
+      { name: "Teal Deep", hex: "#085d75", role: "Accent hover" },
       { name: "Ink", hex: "#101828", role: "Text" },
       { name: "Slate", hex: "#797c83", role: "Muted" },
-      { name: "Notepad", hex: "#fffbe8", role: "Highlight" },
       { name: "Cool Mist", hex: "#f2f4f7", role: "Background" },
+      { name: "Paper", hex: "#ffffff", role: "Surface" },
       { name: "Hairline", hex: "#e4e7ec", role: "Border" },
+      { name: "Notepad", hex: "#fffbe8", role: "Highlight" },
     ],
     typeNote:
-      "System UI stack · 600 headings · large, readable body for long-form insights.",
+      "Space Grotesk display · Inter body · Fraunces italic accent — one word at a time.",
   },
   cleo: {
     vars: {
