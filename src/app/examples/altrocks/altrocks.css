@@ -1,0 +1,415 @@
+/* ============================================================
+   Example site — the Altrocks brand system
+   thealtrocks.house — a household hub (see brands-content/altrocks).
+   Torn Paper: big flat shapes, torn edges, no outlines, no shadows,
+   no gradients. Five people, five colors, one leaning pile. Colors and
+   type come from the brand's look.md. All selectors are namespaced under
+   `.al-site` and prefixed `al-` so they never touch the registry's styles
+   or the Scott Wittrock example CSS.
+   ============================================================ */
+
+.al-site {
+  --al-ochre: #e8a33d; /* Jovey */
+  --al-coral: #ff6250; /* Lacey */
+  --al-teal: #125e7a; /* Scott */
+  --al-fig: #c9457a; /* Ivy   */
+  --al-olive: #5c7f4b; /* Rue   */
+  --al-paper: #f7f2e8;
+  --al-ink: #2b2118;
+  --al-muted: #6f6353;
+  --al-line: #e0d6c2;
+
+  --al-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --al-body: "Hanken Grotesk", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --al-wide: 980px;
+  --al-pad: 32px;
+
+  /* Torn top edge, reused across colored shapes. */
+  --al-torn-top: polygon(
+    0% 10%, 7% 4%, 15% 11%, 23% 3%, 32% 10%, 41% 4%, 50% 11%, 59% 3%,
+    68% 10%, 77% 4%, 86% 11%, 94% 4%, 100% 10%, 100% 100%, 0% 100%
+  );
+  /* Torn on every edge, for full-bleed color fields. */
+  --al-torn-all: polygon(
+    0% 6%, 9% 2%, 20% 7%, 31% 1%, 43% 6%, 55% 1%, 67% 7%, 79% 2%, 90% 6%,
+    100% 2%, 99% 94%, 90% 99%, 78% 93%, 66% 99%, 54% 94%, 42% 99%, 30% 93%,
+    18% 99%, 7% 94%, 1% 98%
+  );
+
+  color-scheme: light dark;
+  background: var(--al-paper);
+  color: var(--al-ink);
+  font-family: var(--al-body);
+  font-size: 17px;
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-color-scheme: dark) {
+  .al-site {
+    --al-paper: #2b2118;
+    --al-ink: #f7f2e8;
+    --al-muted: #b8ab97;
+    --al-line: #453829;
+  }
+}
+
+.al-site * {
+  box-sizing: border-box;
+}
+.al-site a {
+  color: inherit;
+  text-decoration: none;
+}
+.al-site ::selection {
+  background: color-mix(in srgb, var(--al-coral) 30%, transparent);
+}
+
+/* ---- color fills (one per person, assigned for life) ------ */
+.al-fill--ochre {
+  background: var(--al-ochre);
+}
+.al-fill--coral {
+  background: var(--al-coral);
+}
+.al-fill--teal {
+  background: var(--al-teal);
+}
+.al-fill--fig {
+  background: var(--al-fig);
+}
+.al-fill--olive {
+  background: var(--al-olive);
+}
+
+/* ---- example context ribbon ------------------------------- */
+.al-ribbon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 9px var(--al-pad);
+  background: var(--al-ink);
+  color: var(--al-paper);
+  font-family: var(--al-body);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.al-ribbon a {
+  color: var(--al-paper);
+  opacity: 0.8;
+}
+.al-ribbon a:hover {
+  opacity: 1;
+}
+.al-ribbon .al-url {
+  color: var(--al-coral);
+}
+
+/* ---- nav -------------------------------------------------- */
+.al-nav {
+  max-width: var(--al-wide);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 22px var(--al-pad) 10px;
+}
+.al-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.al-wordmark {
+  font-family: var(--al-display);
+  font-weight: 900;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+  color: var(--al-ink);
+}
+.al-wordmark--sm {
+  font-size: 20px;
+}
+.al-navlinks {
+  display: flex;
+  gap: 22px;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.al-navlinks a {
+  color: var(--al-muted);
+}
+.al-navlinks a:hover {
+  color: var(--al-coral);
+}
+
+/* ---- shared section scaffold ------------------------------ */
+.al-section {
+  max-width: var(--al-wide);
+  margin: 0 auto;
+  padding: 40px var(--al-pad);
+}
+.al-label {
+  font-family: var(--al-body);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--al-muted);
+  margin: 0 0 20px;
+}
+.al-sec-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.al-meta {
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--al-muted);
+}
+
+/* ---- hero (paper ground, mark in full color) -------------- */
+.al-hero {
+  max-width: var(--al-wide);
+  margin: 0 auto;
+  padding: 30px var(--al-pad) 24px;
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.al-eyebrow {
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--al-coral);
+  margin: 0 0 14px;
+}
+.al-hero h1 {
+  font-family: var(--al-display);
+  font-weight: 900;
+  font-size: clamp(38px, 6vw, 68px);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  margin: 0 0 20px;
+}
+.al-lede {
+  font-size: 18px;
+  color: var(--al-muted);
+  max-width: 34ch;
+  margin: 0;
+}
+.al-hero__mark {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  justify-self: center;
+}
+
+/* ---- the five (torn cards, faces punched in paper) -------- */
+.al-people {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+.al-person {
+  clip-path: var(--al-torn-top);
+  padding: 34px 16px 22px;
+  text-align: center;
+  color: var(--al-paper);
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+/* Face = a single punched hole in paper color. */
+.al-person__face {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--al-paper);
+  margin-bottom: auto;
+}
+.al-person h3 {
+  font-family: var(--al-display);
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+.al-person__role {
+  font-weight: 800;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+/* ---- chore rows (color owns the person) ------------------- */
+.al-chores {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.al-chore {
+  display: grid;
+  grid-template-columns: 96px 1fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 4px;
+  border-bottom: 1px solid var(--al-line);
+}
+.al-chip {
+  display: inline-block;
+  color: var(--al-paper);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 6px 8px;
+  clip-path: polygon(
+    0 12%, 25% 4%, 50% 12%, 75% 4%, 100% 12%, 96% 90%, 72% 98%, 48% 90%,
+    24% 98%, 3% 90%
+  );
+}
+.al-chore__task {
+  font-size: 16px;
+  font-weight: 500;
+}
+.al-chore__when {
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--al-muted);
+}
+
+/* ---- name stickers (torn circles, knockout names) --------- */
+.al-stickers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.al-sticker {
+  width: 116px;
+  height: 116px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--al-paper);
+  font-family: var(--al-display);
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  clip-path: var(--al-torn-all);
+}
+
+/* ---- Rue (full olive torn field, paper type) -------------- */
+.al-rue {
+  position: relative;
+}
+.al-tag {
+  background: var(--al-olive);
+  color: var(--al-paper);
+  clip-path: var(--al-torn-all);
+  padding: 40px 44px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 300px;
+}
+.al-tag__name {
+  font-family: var(--al-display);
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+.al-tag__sub {
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 0.92;
+}
+.al-rue__note {
+  margin: 20px 0 0;
+  max-width: 46ch;
+  color: var(--al-muted);
+  font-size: 16px;
+}
+
+/* ---- the one ink horizon line ----------------------------- */
+.al-horizon {
+  max-width: var(--al-wide);
+  margin: 20px auto 0;
+  height: 2px;
+  background: var(--al-ink);
+}
+
+/* ---- footer ----------------------------------------------- */
+.al-footer {
+  max-width: var(--al-wide);
+  margin: 0 auto;
+  padding: 24px var(--al-pad) 56px;
+}
+.al-disclaimer {
+  font-size: 13px;
+  color: var(--al-muted);
+  line-height: 1.5;
+  padding: 12px 16px;
+  background: color-mix(in srgb, var(--al-coral) 12%, transparent);
+  clip-path: var(--al-torn-top);
+}
+.al-disclaimer b {
+  color: var(--al-ink);
+}
+.al-footer__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+/* ---- responsive ------------------------------------------- */
+@media (max-width: 760px) {
+  .al-hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .al-hero__mark {
+    grid-row: 1;
+    max-width: 220px;
+    justify-self: start;
+  }
+  .al-people {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .al-chore {
+    grid-template-columns: 84px 1fr;
+  }
+  .al-chore__when {
+    grid-column: 2;
+    justify-self: start;
+  }
+}

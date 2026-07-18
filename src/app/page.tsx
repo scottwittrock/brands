@@ -95,7 +95,8 @@ export default function Home() {
           Brand Registry — an example MCP server serving brand guidelines.{" "}
           {brands.length} brand{brands.length === 1 ? "" : "s"} registered. See a
           brand applied to real pages in the{" "}
-          <Link href="/examples/scottwittrock">Scott Wittrock example sites</Link>.
+          <Link href="/examples/scottwittrock">Scott Wittrock example sites</Link>{" "}
+          or the <Link href="/examples/altrocks">Altrocks family page</Link>.
         </div>
       </footer>
     </>
