@@ -4,26 +4,26 @@ import "../examples.css";
 import { CrossLink, Disclaimer, ESSAYS, Ribbon } from "../parts";
 
 export const metadata: Metadata = {
-  title: "Head for Product — essays on AI-era product craft",
+  title: "Head for Product — essays on the data and surfaces behind good products",
   description:
-    "A publication by Scott Wittrock on what changes for product people when building software stops being the hard part.",
+    "A publication by Scott Wittrock on the personal data at the core of most products, the surfaces where people meet it, and what changes as agents become a surface too.",
 };
 
 const PILLARS = [
   {
     n: "One",
-    title: "The AI-era PM reframe",
-    body: "When building gets cheap, craft moves from making to choosing. Taste, curation, judgment.",
+    title: "The data underneath",
+    body: "The personal core that decides whether a product works, and the trust that honoring it requires.",
   },
   {
     n: "Two",
-    title: "How product gets built",
-    body: "Process and teams without dogma: cycles, ratios, autonomy, and what actually ships meaningful work.",
+    title: "Surfaces",
+    body: "How people and data meet: visual, messaging, developer, conversational, and increasingly agentic.",
   },
   {
     n: "Three",
     title: "Building in the open",
-    body: "What I learn making things myself — connected products, AI tooling, conversion, shipping small.",
+    body: "The experiments, and what making things teaches.",
   },
 ];
 
@@ -66,12 +66,13 @@ export default function HeadForProductLanding() {
         <section className="sw-pub-hero">
           <p className="sw-label sw-rise">A publication on product craft</p>
           <h1 className="sw-rise">
-            When building gets cheap, the craft moves to <span className="sw-em">choosing</span>.
+            The data underneath, and the <span className="sw-em">surfaces</span> on top.
           </h1>
           <p className="sw-pub-dek sw-rise">
-            Essays on AI-era product craft — taste, judgment, and choosing what
-            deserves to exist. Here&apos;s how I&apos;m thinking about it, from
-            someone still in the work.
+            Essays on the personal data at the core of most products, the surfaces
+            where people meet it, and — increasingly — what changes when something
+            else acts on it. Here&apos;s how I&apos;m thinking about it, from someone
+            still in the work.
           </p>
           <form className="sw-subscribe sw-rise" id="subscribe" action="#">
             <input type="email" placeholder="you@work.com" aria-label="Email address" />
@@ -141,7 +142,7 @@ export default function HeadForProductLanding() {
           <CrossLink
             href="/examples/scottwittrock/about"
             title="Who's writing this"
-            blurb="Scott Wittrock — product manager and builder, a decade close to AI. The record and the résumé live on scottwittrock.com."
+            blurb="Scott Wittrock — product builder, a decade building the surfaces where people and data meet. The record and the résumé live on scottwittrock.com."
             cta="scottwittrock.com"
           />
         </section>

@@ -71,27 +71,27 @@ export function CrossLink({
  */
 export const ESSAYS = [
   {
-    title: "More pictures, not more masterpieces",
-    dek: "When building gets cheap, the scarce skill isn't production — it's choosing which pictures are worth taking.",
-    pillar: "The AI-era PM reframe",
-    meta: "Anchor · 2026",
-  },
-  {
-    title: "Shape Up vs. shipping fast is a false binary",
-    dek: "Cadence is a design decision, not a religion. What I've come to believe about cycles and autonomy.",
-    pillar: "How product gets built",
+    title: "When something else acts on your data",
+    dek: "As agents become a surface, the trust burden goes up, not down. Who is reaching into the data, and on whose behalf.",
+    pillar: "The data underneath",
     meta: "Anchor · 2026",
   },
   {
     title: "The connected product: one capability, three front doors",
-    dek: "UI, chat, and API as one surface, not three tickets.",
-    pillar: "Building in the open",
+    dek: "UI, chat, and API as one surface, not three tickets — where people and data meet.",
+    pillar: "Surfaces",
     meta: "Anchor · 2026",
   },
   {
     title: "Developer experience is a matter of taste",
     dek: "Treating DX as one surface instead of three tickets made integration roughly three times faster.",
-    pillar: "The AI-era PM reframe",
+    pillar: "Surfaces",
+    meta: "Anchor · 2026",
+  },
+  {
+    title: "What building a freemium SaaS taught me about conversion",
+    dek: "One capability across UI, chat, and API — and what shipping it on my own time taught me.",
+    pillar: "Building in the open",
     meta: "Anchor · 2026",
   },
 ];

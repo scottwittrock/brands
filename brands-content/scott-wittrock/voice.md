@@ -41,18 +41,19 @@ about / around" is a strength, not a hedge.
 
 ## The one-liner (bio / meta description)
 
-> Product manager and builder, a decade close to AI — computer vision, visual
-> search, now language models. I work at Customer.io and write about what changes
-> for product people when building software stops being the hard part.
+> Product builder. A decade building the surfaces where people and data meet —
+> computer vision to LLMs to agents — across consumer, enterprise, and developer
+> products.
 
 ## The longer "why" (About copy)
 
-> I've spent about a decade close to AI — from computer vision and visual search
-> to language models. At Customer.io I work on developer experience, the MCP
-> server included — building for the people who build on top of you, increasingly
-> agentic ones. The throughline is mobile and developer experience: the longer I
-> do this, the more I think the hard part was never the engineering — it's
-> choosing what deserves to exist.
+> I'm a product builder. For about a decade I've worked on the same problem under
+> different names — from computer vision and visual search to language models and
+> agents. The core of most products is data, and it's personal; people hand it
+> over in trust. My craft is building the surfaces where people and data meet —
+> visual, messaging, developer, conversational — and the systems underneath them.
+> At Customer.io that's developer experience and the MCP server, building for the
+> people (and increasingly the agents) who build on top of you.
 
 ## Six gut checks
 
@@ -68,14 +69,14 @@ about / around" is a strength, not a hedge.
 - **Bragging →** ✅ "I argued for building the MCP server as a first-class
   surface. It's become part of how 7,800 teams work." ❌ "Spearheaded the
   industry-leading MCP server driving 300% adoption."
-- **Résumé →** ✅ "A decade close to AI — computer vision, visual search, now
-  language models. The same lesson each time." ❌ "Expert AI product leader with
-  a decade of proven success."
+- **Résumé →** ✅ "A decade shipping products — computer vision to LLMs to
+  agents. The same problem each time: making the core of a product reachable." ❌
+  "Expert AI product leader with a decade of proven success."
 - **DX →** ✅ "I treated developer experience as one surface, not three tickets.
   Integration got roughly three times faster." ❌ "Revolutionized DX, achieving a
   3x improvement."
-- **Positioning →** ✅ "I care about the part most people skip: choosing what
-  deserves to exist, and for whom." ❌ "Passionate, results-driven PM who exceeds
+- **Positioning →** ✅ "I build the surfaces where people and data meet — and the
+  systems underneath them." ❌ "Passionate, results-driven PM who exceeds
   expectations."
 
 ## The editorial system (headforproduct.com)
@@ -85,13 +86,12 @@ cadence do the work.
 
 **Three pillars (the spine)**
 
-1. **The AI-era PM reframe** — when building gets cheap, craft moves from making
-   to choosing. Taste, curation, judgment. (Signature territory — the
-   photography argument lives here.)
-2. **How product gets built** — process and teams without dogma: cycles, ratios,
-   autonomy, and what actually ships meaningful work.
-3. **Building in the open** — what I learn making things myself: connected
-   products (UI/chat/API), AI tooling, conversion, shipping small on my own time.
+1. **The data underneath** — the personal core that decides whether a product
+   works, and the trust that honoring it requires.
+2. **Surfaces** — how people and data meet: visual, messaging, developer,
+   conversational, and increasingly agentic. (The "connected product" idea lives
+   here.)
+3. **Building in the open** — the experiments, and what making things teaches.
 
 **Cadence**
 
@@ -103,17 +103,17 @@ cadence do the work.
   and the archive.
 - **Subscribe from day one** — a writing brand compounds through an email list.
 
-**Runway of titles**
+**Runway of titles** (re-filed under the three pillars)
 
-- *Anchor* — More pictures, not more masterpieces (the flagship; the AI-era PM
-  reframe).
-- *Anchor* — Shape Up vs. shipping fast is a false binary (how product gets
-  built).
-- *Anchor* — The connected product: one capability, three front doors (building
-  in the open).
-- *Anchor* — What building a freemium SaaS taught me about conversion (building
-  in the open).
-- *Anchor* — Developer experience is a matter of taste (the AI-era PM reframe).
+- *Anchor* — When something else acts on your data (**the flagship**; the data
+  underneath) — as agents become a surface, the trust burden goes up, not down.
+- *Anchor* — The connected product: one capability, three front doors (surfaces).
+- *Anchor* — Developer experience is a matter of taste (surfaces).
+- *Anchor* — What building a freemium SaaS taught me about conversion (building in
+  the open).
+- *Anchor* — Shape Up vs. shipping fast is a false binary (building in the open).
+- *Anchor* — More pictures, not more masterpieces (building in the open; taste &
+  curation as a sub-theme now, no longer the flagship).
+- *Field note* — Giving an AI agent a front door (surfaces).
 - *Field note* — Shipping from a phone: my cloud dev setup.
 - *Field note* — PM-to-engineer ratios are contextual, not gospel.
-- *Field note* — Giving an AI agent a front door.
