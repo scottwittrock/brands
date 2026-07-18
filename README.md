@@ -5,7 +5,7 @@ A public **brand-guidelines registry** that does two things from one Next.js app
 1. **MCP server** — an endpoint LLM clients (Claude, Cursor, …) connect to that
    returns each brand's **look** (visual identity) and **voice** (tone & writing)
    as markdown, so a model can produce on-brand output.
-2. **Showcase pages** — public web pages that render each brand's identity
+2. **Style guide pages** — public web pages that render each brand's identity
    visually (palette, type scale, sample UI) as a live example.
 
 It's built to hold **many brands**: each brand is a folder of prose markdown, and
@@ -19,9 +19,9 @@ new brands are added by dropping in files (plus a small visual theme entry).
   - `look.md` — color, type, logo, layout, imagery
   - `voice.md` — principles, tone, vocabulary, examples
 - **Visual themes** live in [`src/lib/themes.ts`](./src/lib/themes.ts) — the
-  colors, fonts, and radius used to *render* each brand's showcase. Content stays
+  colors, fonts, and radius used to *render* each brand's style guide. Content stays
   prose-only, so keep the theme values consistent with `look.md` by hand.
-- The MCP endpoint and the showcase pages both read the same content via
+- The MCP endpoint and the style guide pages both read the same content via
   [`src/lib/brands.ts`](./src/lib/brands.ts).
 
 ## MCP surface
@@ -46,7 +46,7 @@ The endpoint is served at **`/mcp`** (stateless, read-only).
 {
   "mcpServers": {
     "brand-registry": {
-      "url": "https://<your-deployment>/mcp"
+      "url": "https://brands.scottwittrock.com/mcp"
     }
   }
 }
@@ -58,7 +58,7 @@ Locally the URL is `http://localhost:3000/mcp`.
 
 1. Create `brands-content/<slug>/` with `overview.md`, `look.md`, `voice.md`.
    (Any subset works; present files become the brand's aspects.)
-2. Add a matching entry to `themes` in `src/lib/themes.ts` so the showcase renders
+2. Add a matching entry to `themes` in `src/lib/themes.ts` so the style guide renders
    its real look. A brand with no theme entry falls back to a neutral default.
 
 That's it — the home gallery, the `/brands/<slug>` page, and the MCP tools/resources
@@ -87,7 +87,7 @@ Images are served by URL (no base64). Per brand:
    ```
 
 Each file is served at `/brands/<slug>/assets/<file>` and surfaced through
-`get_brand_assets`, the `brand://<slug>/assets` resource, and the showcase page.
+`get_brand_assets`, the `brand://<slug>/assets` resource, and the style guide page.
 Only files listed in `assets.json` are served (the manifest is an allowlist).
 
 ### Absolute URLs — `PUBLIC_BASE_URL`
@@ -107,7 +107,7 @@ npm run dev      # http://localhost:3000
 ```
 
 - `/` — gallery of all brands + MCP connection info
-- `/brands/<slug>` — a brand's full showcase
+- `/brands/<slug>` — a brand's full style guide
 - `/mcp` — the MCP endpoint
 
 Inspect the MCP endpoint interactively:
@@ -123,7 +123,7 @@ This is a standard Next.js App Router app, so Vercel needs no special config.
 
 1. Push this repo and import it in the Vercel dashboard (or run `vercel`).
 2. Deploy — `vercel --prod` (or connect the repo for automatic deploys).
-3. Your MCP endpoint is `https://<project>.vercel.app/mcp`; the showcase is at the
+3. Your MCP endpoint is `https://<project>.vercel.app/mcp`; the style guide is at the
    root.
 
 `next.config.ts` bundles `brands-content/` into the MCP function via
@@ -132,6 +132,3 @@ This is a standard Next.js App Router app, so Vercel needs no special config.
 ## Tech
 
 Next.js (App Router) · `mcp-handler` + `@modelcontextprotocol/sdk` · `react-markdown`.
-
-> The seed brands **Nimbus** and **Verdant** are fictional examples included to
-> demonstrate the format.
