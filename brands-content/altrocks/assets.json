@@ -1,0 +1,25 @@
+{
+  "assets": [
+    {
+      "file": "logo.svg",
+      "name": "Primary lockup",
+      "kind": "logo",
+      "description": "The Stack (five torn strips, one per person) above the ALTROCKS wordmark. Use on paper or light backgrounds; never outline or shadow the mark.",
+      "background": "light"
+    },
+    {
+      "file": "icon.svg",
+      "name": "App icon / mark",
+      "kind": "icon",
+      "description": "The Stack alone on a paper tile for avatars, favicons, and app tiles. Use where the name already appears.",
+      "background": "any"
+    },
+    {
+      "file": "band.svg",
+      "name": "Torn Band",
+      "kind": "wordmark",
+      "description": "Secondary mark — a ripped coral strip with ALTROCKS knocked out in paper. Use for anything wide: totes, headers, signage, banners.",
+      "background": "light"
+    }
+  ]
+}
