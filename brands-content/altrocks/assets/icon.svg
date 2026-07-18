@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Altrocks icon">
+  <!-- Paper ground, per brand rule (mark is never outlined, never shadowed). -->
+  <rect width="96" height="96" rx="22" fill="#F7F2E8"/>
+  <!-- The Stack, scaled to fit the tile. Grid is 240x200; baseline shared. -->
+  <g transform="translate(6,18) scale(0.35)">
+    <path d="M20,90 L26,85 L32,91 L38,84 L44,89 L50,87 L49,118 L51,150 L50,180 L20,180 L21,148 L19,116 Z" fill="#E8A33D"/>
+    <path d="M58,35 L64,30 L70,36 L76,29 L82,35 L90,31 L89,80 L91,130 L90,180 L58,180 L59,128 L57,78 Z" fill="#FF6250"/>
+    <path d="M98,27 L104,22 L110,28 L116,21 L122,27 L130,23 L129,80 L131,140 L130,180 L98,180 L99,138 L97,78 Z" fill="#125E7A"/>
+    <path d="M138,107 L144,102 L150,108 L156,101 L162,107 L166,104 L165,140 L167,160 L166,180 L138,180 L139,158 L137,138 Z" fill="#C9457A"/>
+    <path d="M174,143 L182,138 L190,144 L198,137 L206,143 L214,138 L220,141 L219,160 L220,180 L174,180 L175,162 L173,158 Z" fill="#5C7F4B"/>
+  </g>
+</svg>

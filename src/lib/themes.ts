@@ -54,6 +54,31 @@ export const defaultTheme: BrandTheme = {
 };
 
 export const themes: Record<string, BrandTheme> = {
+  altrocks: {
+    vars: {
+      "--b-bg": "#f7f2e8",
+      "--b-surface": "#efe7d6",
+      "--b-fg": "#2b2118",
+      "--b-muted": "#6f6353",
+      "--b-primary": "#ff6250",
+      "--b-on-primary": "#f7f2e8",
+      "--b-accent": "#125e7a",
+      "--b-border": "#e0d6c2",
+      "--b-radius": "4px",
+      "--b-font-heading": "'Fraunces', Georgia, 'Times New Roman', serif",
+      "--b-font-body": "'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif",
+    },
+    palette: [
+      { name: "Coral", hex: "#ff6250", role: "Lead · Lacey" },
+      { name: "Deep Teal", hex: "#125e7a", role: "Anchor · Scott" },
+      { name: "Ochre", hex: "#e8a33d", role: "Warm · Jovey" },
+      { name: "Fig", hex: "#c9457a", role: "Accent · Ivy" },
+      { name: "Olive", hex: "#5c7f4b", role: "Ground · Rue" },
+      { name: "Paper", hex: "#f7f2e8", role: "Background" },
+      { name: "Ink", hex: "#2b2118", role: "Text" },
+    ],
+    typeNote: "Fraunces 900 display · Hanken Grotesk body · torn-paper, hand-made.",
+  },
   nimbus: {
     vars: {
       "--b-bg": "#ffffff",

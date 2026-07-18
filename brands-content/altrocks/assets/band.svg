@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="120" viewBox="0 0 360 120" role="img" aria-label="Altrocks torn band">
+  <!-- Torn Band: a ripped horizontal strip of coral with ALTROCKS knocked out in paper. -->
+  <defs>
+    <mask id="wordmark-knockout">
+      <rect x="0" y="0" width="360" height="120" fill="#fff"/>
+      <text x="180" y="72" text-anchor="middle" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="46" font-weight="900" letter-spacing="-1" fill="#000">ALTROCKS</text>
+    </mask>
+  </defs>
+  <path d="M0,26 L34,22 L70,29 L104,21 L150,28 L196,20 L242,29 L290,22 L332,28 L360,23 L360,96 L326,99 L286,92 L244,100 L198,91 L150,100 L104,92 L62,99 L26,92 L0,98 Z" fill="#FF6250" mask="url(#wordmark-knockout)"/>
+</svg>
