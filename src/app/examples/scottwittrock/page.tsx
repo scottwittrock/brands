@@ -4,9 +4,9 @@ import "../examples.css";
 import { CrossLink, Disclaimer, ESSAYS, Ribbon } from "../parts";
 
 export const metadata: Metadata = {
-  title: "Scott Wittrock — product manager & builder",
+  title: "Scott Wittrock — product builder",
   description:
-    "Product manager and builder, a decade close to AI — computer vision, visual search, now language models.",
+    "Product builder (product manager). A decade shipping products — computer vision to LLMs to agents — for consumers, enterprises, and developers.",
 };
 
 /**
@@ -42,14 +42,13 @@ export default function ScottWittrockHome() {
 
       <div className="sw-wrap">
         <section className="sw-hero">
-          <p className="sw-label sw-rise">Product manager &amp; builder</p>
+          <p className="sw-label sw-rise">Product builder</p>
           <h1 className="sw-rise">
-            The craft was never the building. It&apos;s the <span className="sw-em">choosing</span>.
+            Product <span className="sw-em">builder</span>.
           </h1>
           <p className="sw-lede sw-rise">
-            A decade close to AI — computer vision, visual search, now language
-            models. I work at Customer.io and write about what changes for product
-            people when building software stops being the hard part.
+            A decade shipping products — computer vision to LLMs to agents — for
+            consumers, enterprises, and developers.
           </p>
           <div className="sw-cta-row sw-rise">
             <Link className="sw-btn sw-btn--solid" href="/examples/scottwittrock/about">
@@ -98,9 +97,9 @@ export default function ScottWittrockHome() {
               <div>
                 <h3>Visual search, at retail scale</h3>
                 <p>
-                  Shipped search-by-image across a catalog spanning sixty
-                  retailers. The lesson that stuck: the model is the easy part —
-                  the taste is deciding what a good match even means.
+                  Mapped a retailer&apos;s full catalog so a shopper could snap a
+                  photo and find the item — a visual surface onto data that words
+                  can&apos;t reach, across sixty retailers.
                 </p>
               </div>
               <span className="sw-when">Visual search era</span>
@@ -141,7 +140,7 @@ export default function ScottWittrockHome() {
             <CrossLink
               href="/examples/headforproduct"
               title="Head for Product"
-              blurb="Where the thinking gets published — essays on AI-era product craft. Same person, same press."
+              blurb="Where the thinking gets published — essays on the data and surfaces behind good products. Same person, same press."
               cta="Read the writing"
             />
           </div>
