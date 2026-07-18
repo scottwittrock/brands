@@ -6,6 +6,11 @@
    type come from the brand's look.md. All selectors are namespaced under
    `.al-site` and prefixed `al-` so they never touch the registry's styles
    or the Scott Wittrock example CSS.
+
+   Torn edges are rendered with an SVG fractal-noise displacement filter
+   (see #al-tear / #al-tearS, defined inline on the page) applied to each
+   shape's ::before color layer. Keeping the color on ::before means the
+   text on top stays crisp while only the paper edge tears.
    ============================================================ */
 
 .al-site {
@@ -24,18 +29,6 @@
 
   --al-wide: 980px;
   --al-pad: 32px;
-
-  /* Torn top edge, reused across colored shapes. */
-  --al-torn-top: polygon(
-    0% 10%, 7% 4%, 15% 11%, 23% 3%, 32% 10%, 41% 4%, 50% 11%, 59% 3%,
-    68% 10%, 77% 4%, 86% 11%, 94% 4%, 100% 10%, 100% 100%, 0% 100%
-  );
-  /* Torn on every edge, for full-bleed color fields. */
-  --al-torn-all: polygon(
-    0% 6%, 9% 2%, 20% 7%, 31% 1%, 43% 6%, 55% 1%, 67% 7%, 79% 2%, 90% 6%,
-    100% 2%, 99% 94%, 90% 99%, 78% 93%, 66% 99%, 54% 94%, 42% 99%, 30% 93%,
-    18% 99%, 7% 94%, 1% 98%
-  );
 
   color-scheme: light dark;
   background: var(--al-paper);
@@ -57,6 +50,12 @@
   }
 }
 
+.al-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
 .al-site * {
   box-sizing: border-box;
 }
@@ -68,21 +67,43 @@
   background: color-mix(in srgb, var(--al-coral) 30%, transparent);
 }
 
-/* ---- color fills (one per person, assigned for life) ------ */
+/* ---- torn shapes -----------------------------------------
+   A `.al-torn` element paints its color on a ::before layer and runs that
+   layer through the displacement filter, so only the edge tears. `isolation`
+   keeps the z-index:-1 layer behind the element's own text, not the page.
+   `--al-c` selects the color; `--al-filter` swaps in the finer small-shape
+   filter for chips and stickers. */
+.al-torn {
+  position: relative;
+  isolation: isolate;
+  background: transparent;
+}
+.al-torn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--al-c, var(--al-coral));
+  filter: var(--al-filter, url(#al-tear));
+}
+.al-torn--sm {
+  --al-filter: url(#al-tearS);
+}
+
 .al-fill--ochre {
-  background: var(--al-ochre);
+  --al-c: var(--al-ochre);
 }
 .al-fill--coral {
-  background: var(--al-coral);
+  --al-c: var(--al-coral);
 }
 .al-fill--teal {
-  background: var(--al-teal);
+  --al-c: var(--al-teal);
 }
 .al-fill--fig {
-  background: var(--al-fig);
+  --al-c: var(--al-fig);
 }
 .al-fill--olive {
-  background: var(--al-olive);
+  --al-c: var(--al-olive);
 }
 
 /* ---- example context ribbon ------------------------------- */
@@ -227,14 +248,13 @@
 .al-people {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
+  gap: 20px;
 }
 .al-person {
-  clip-path: var(--al-torn-top);
-  padding: 34px 16px 22px;
+  padding: 34px 16px 24px;
   text-align: center;
   color: var(--al-paper);
-  min-height: 190px;
+  min-height: 196px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,18 +299,14 @@
   border-bottom: 1px solid var(--al-line);
 }
 .al-chip {
-  display: inline-block;
+  justify-self: start;
   color: var(--al-paper);
   font-weight: 800;
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: center;
-  padding: 6px 8px;
-  clip-path: polygon(
-    0 12%, 25% 4%, 50% 12%, 75% 4%, 100% 12%, 96% 90%, 72% 98%, 48% 90%,
-    24% 98%, 3% 90%
-  );
+  padding: 7px 12px;
 }
 .al-chore__task {
   font-size: 16px;
@@ -304,11 +320,11 @@
   color: var(--al-muted);
 }
 
-/* ---- name stickers (torn circles, knockout names) --------- */
+/* ---- name stickers (torn shapes, knockout names) ---------- */
 .al-stickers {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 20px;
 }
 .al-sticker {
   width: 116px;
@@ -321,17 +337,11 @@
   font-weight: 900;
   font-size: 22px;
   letter-spacing: -0.01em;
-  clip-path: var(--al-torn-all);
 }
 
 /* ---- Rue (full olive torn field, paper type) -------------- */
-.al-rue {
-  position: relative;
-}
 .al-tag {
-  background: var(--al-olive);
   color: var(--al-paper);
-  clip-path: var(--al-torn-all);
   padding: 40px 44px;
   display: inline-flex;
   flex-direction: column;
@@ -373,11 +383,10 @@
 }
 .al-disclaimer {
   font-size: 13px;
-  color: var(--al-muted);
+  color: var(--al-ink);
   line-height: 1.5;
-  padding: 12px 16px;
-  background: color-mix(in srgb, var(--al-coral) 12%, transparent);
-  clip-path: var(--al-torn-top);
+  padding: 14px 18px;
+  --al-c: color-mix(in srgb, var(--al-coral) 16%, var(--al-paper));
 }
 .al-disclaimer b {
   color: var(--al-ink);

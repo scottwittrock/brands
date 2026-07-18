@@ -35,6 +35,45 @@ const CHORES = [
 export default function AltrocksHome() {
   return (
     <div className="al-site">
+      {/* Torn-edge filters: fractal-noise displacement gives real torn paper.
+          Applied to shape backgrounds only (via ::before) so text stays crisp. */}
+      <svg className="al-defs" width="0" height="0" aria-hidden="true" focusable="false">
+        <defs>
+          <filter id="al-tear" x="-20%" y="-20%" width="140%" height="140%">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.02 0.045"
+              numOctaves={4}
+              seed={11}
+              result="n"
+            />
+            <feDisplacementMap
+              in="SourceGraphic"
+              in2="n"
+              scale={6}
+              xChannelSelector="R"
+              yChannelSelector="G"
+            />
+          </filter>
+          <filter id="al-tearS" x="-30%" y="-30%" width="160%" height="160%">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.06 0.11"
+              numOctaves={3}
+              seed={6}
+              result="n"
+            />
+            <feDisplacementMap
+              in="SourceGraphic"
+              in2="n"
+              scale={3}
+              xChannelSelector="R"
+              yChannelSelector="G"
+            />
+          </filter>
+        </defs>
+      </svg>
+
       {/* Example context ribbon */}
       <div className="al-ribbon">
         <span>
@@ -88,7 +127,7 @@ export default function AltrocksHome() {
         <p className="al-label">The five</p>
         <div className="al-people">
           {FAMILY.map((p) => (
-            <article className={`al-person al-fill--${p.color}`} key={p.name}>
+            <article className={`al-person al-torn al-fill--${p.color}`} key={p.name}>
               <span className="al-person__face" aria-hidden="true" />
               <h3>{p.name}</h3>
               <span className="al-person__role">{p.role}</span>
@@ -108,7 +147,9 @@ export default function AltrocksHome() {
         <div className="al-chores">
           {CHORES.map((c, i) => (
             <div className="al-chore" key={i}>
-              <span className={`al-chip al-fill--${c.color}`}>{c.who}</span>
+              <span className={`al-chip al-torn al-torn--sm al-fill--${c.color}`}>
+                {c.who}
+              </span>
               <span className="al-chore__task">{c.task}</span>
               <span className="al-chore__when">{c.when}</span>
             </div>
@@ -126,7 +167,10 @@ export default function AltrocksHome() {
         </div>
         <div className="al-stickers">
           {FAMILY.map((p) => (
-            <span className={`al-sticker al-fill--${p.color}`} key={p.name}>
+            <span
+              className={`al-sticker al-torn al-torn--sm al-fill--${p.color}`}
+              key={p.name}
+            >
               {p.name}
             </span>
           ))}
@@ -135,7 +179,7 @@ export default function AltrocksHome() {
 
       {/* Rue's tag — torn olive shape, name in paper */}
       <section className="al-section al-rue" id="rue">
-        <div className="al-tag">
+        <div className="al-tag al-torn al-fill--olive">
           <span className="al-tag__name">RUE</span>
           <span className="al-tag__sub">If found, we miss her — call the pile.</span>
         </div>
@@ -149,7 +193,7 @@ export default function AltrocksHome() {
       <div className="al-horizon" aria-hidden="true" />
 
       <footer className="al-footer">
-        <div className="al-disclaimer">
+        <div className="al-disclaimer al-torn">
           <b>Example — brand reference only.</b> This page is placeholder styling
           to demonstrate the Altrocks torn-paper brand. The family details are
           illustrative.
