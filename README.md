@@ -132,6 +132,3 @@ This is a standard Next.js App Router app, so Vercel needs no special config.
 ## Tech
 
 Next.js (App Router) · `mcp-handler` + `@modelcontextprotocol/sdk` · `react-markdown`.
-
-> The seed brands **Nimbus** and **Verdant** are fictional examples included to
-> demonstrate the format.

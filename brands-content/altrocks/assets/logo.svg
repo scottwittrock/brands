@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="380" viewBox="0 0 240 304" role="img" aria-label="Altrocks logo">
+  <!--
+    The Stack: five torn vertical strips on a shared baseline (y=180), one per
+    person. Edges are torn with an feTurbulence + feDisplacementMap filter (real
+    torn-paper look, no outlines, no shadows). The strips extend below y=180 and
+    are clipped by the nested SVG viewport, so the shared baseline stays clean
+    while the tops and sides tear — per the brand rule.
+  -->
+  <defs>
+    <filter id="tear" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028 0.05" numOctaves="4" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <svg x="0" y="0" width="240" height="180" viewBox="0 0 240 180">
+    <g filter="url(#tear)">
+      <rect x="20" y="88" width="30" height="98" fill="#E8A33D"/><!-- Jovey · Ochre -->
+      <rect x="58" y="32" width="32" height="154" fill="#FF6250"/><!-- Lacey · Coral -->
+      <rect x="98" y="24" width="32" height="162" fill="#125E7A"/><!-- Scott · Deep Teal -->
+      <rect x="138" y="104" width="28" height="82" fill="#C9457A"/><!-- Ivy · Fig -->
+      <rect x="174" y="140" width="46" height="46" fill="#5C7F4B"/><!-- Rue · Olive (short + wide, leans right) -->
+    </g>
+  </svg>
+  <!-- Wordmark (unfiltered so it stays crisp) -->
+  <text x="120" y="248" text-anchor="middle" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="37" font-weight="900" letter-spacing="-0.5" fill="#2B2118">ALTROCKS</text>
+</svg>

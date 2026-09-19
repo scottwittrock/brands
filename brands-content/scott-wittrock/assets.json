@@ -1,0 +1,18 @@
+{
+  "assets": [
+    {
+      "file": "logo.svg",
+      "name": "Wordmark (placeholder)",
+      "kind": "wordmark",
+      "description": "Teal dot + 'Scott Wittrock' set in Space Grotesk — the stand-in identity until the final mark exists. Use the 'Head for Product' wordmark for the publication. Light backgrounds.",
+      "background": "light"
+    },
+    {
+      "file": "icon.svg",
+      "name": "App icon / mark (placeholder)",
+      "kind": "icon",
+      "description": "Placeholder mark: a filled deep-teal dot on a soft rounded square, for avatars, favicons, and app tiles. Drop in the real mark once it exists.",
+      "background": "any"
+    }
+  ]
+}
