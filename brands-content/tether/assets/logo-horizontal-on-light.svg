@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="457" height="100" viewBox="0 0 457.32 100" role="img" aria-label="Tether horizontal lockup, for light backgrounds">
+  <title>Tether horizontal lockup, for light backgrounds</title>
+  <g transform="rotate(10 50 50)">
+    <g stroke="#0f172a" stroke-width="2.242" stroke-linecap="round">
+      <line x1="39.344" y1="50" x2="27.31" y2="50"/>
+      <line x1="60.656" y1="50" x2="72.69" y2="50"/>
+      <line x1="50" y1="39.344" x2="50" y2="27.31"/>
+      <line x1="50" y1="60.656" x2="50" y2="72.69"/>
+      <line x1="42.465" y1="42.465" x2="28.053" y2="28.053"/>
+      <line x1="57.535" y1="57.535" x2="71.947" y2="71.947"/>
+      <line x1="57.535" y1="42.465" x2="71.947" y2="28.053"/>
+      <line x1="42.465" y1="57.535" x2="28.053" y2="71.947"/>
+    </g>
+    <circle cx="50" cy="50" r="9.056" fill="#06b6d4"/>
+    <g fill="#0f172a">
+      <circle cx="22.833" cy="50" r="3.277"/>
+      <circle cx="77.167" cy="50" r="3.277"/>
+      <circle cx="50" cy="22.833" r="3.277"/>
+      <circle cx="50" cy="77.167" r="3.277"/>
+      <circle cx="21.716" cy="21.716" r="7.762"/>
+      <circle cx="78.284" cy="78.284" r="7.762"/>
+      <circle cx="78.284" cy="21.716" r="7.762"/>
+      <circle cx="21.716" cy="78.284" r="7.762"/>
+    </g>
+  </g>
+  <text x="130" y="85.28" font-family="Sora, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="98" font-weight="600" letter-spacing="-1.96" fill="#0f172a">tether</text>
+</svg>

@@ -54,6 +54,31 @@ export const defaultTheme: BrandTheme = {
 };
 
 export const themes: Record<string, BrandTheme> = {
+  tether: {
+    vars: {
+      "--b-bg": "#0f172a",
+      "--b-surface": "#16233b",
+      "--b-fg": "#f8fafc",
+      "--b-muted": "#94a3b8",
+      "--b-primary": "#06b6d4",
+      "--b-on-primary": "#042630",
+      "--b-accent": "#22d3ee",
+      "--b-border": "#1e2b41",
+      "--b-radius": "12px",
+      "--b-font-heading": "'Sora', ui-sans-serif, system-ui, sans-serif",
+      "--b-font-body": "'Sora', ui-sans-serif, system-ui, sans-serif",
+    },
+    palette: [
+      { name: "Accent", hex: "#06b6d4", role: "Primary" },
+      { name: "Accent Bright", hex: "#22d3ee", role: "Hover" },
+      { name: "Accent Ink", hex: "#042630", role: "On accent" },
+      { name: "Background", hex: "#0f172a", role: "Background" },
+      { name: "Surface", hex: "#16233b", role: "Surface" },
+      { name: "Text", hex: "#f8fafc", role: "Text" },
+    ],
+    typeNote:
+      "Sora throughout \u2014 600 for the wordmark, 400 for body. Dark-first; one cyan accent per view.",
+  },
   nimbus: {
     vars: {
       "--b-bg": "#ffffff",

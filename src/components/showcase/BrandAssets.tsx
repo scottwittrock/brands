@@ -62,7 +62,16 @@ export function BrandAssets({
           </h3>
           <div className="sc-assets">
             {items.map((a) => (
-              <figure className="sc-asset" key={a.file}>
+              <figure
+                className="sc-asset"
+                key={a.file}
+                // Honour the asset's declared background. Every tile used to
+                // take --b-bg, so a brand whose light-background assets are
+                // dark ink (or whose dark ones are near-white) rendered them
+                // invisible against their own preview. `any` keeps the brand
+                // background, which is right for tiles that carry their own.
+                data-bg={a.background ?? "any"}
+              >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={`/brands/${slug}/assets/${a.file}`}
