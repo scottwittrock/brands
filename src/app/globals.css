@@ -321,6 +321,15 @@ pre {
   padding: 18px;
   background: var(--b-bg);
 }
+/* Preview an asset against the surface it is drawn for, not always the
+   brand background: a light-background asset shown on a dark field (or the
+   reverse) is invisible in its own gallery. */
+.sc-asset[data-bg="light"] img {
+  background: #ffffff;
+}
+.sc-asset[data-bg="dark"] img {
+  background: #0b1220;
+}
 .sc-asset figcaption {
   padding: 12px 14px 16px;
   border-top: 1px solid var(--b-border);

@@ -1,0 +1,144 @@
+{
+  "assets": [
+    {
+      "file": "logo-horizontal-on-dark.svg",
+      "name": "Primary logo \u2014 horizontal, on dark",
+      "kind": "logo",
+      "description": "Mark and wordmark side by side, near-white on the navy field. The default lockup; use wherever the space is wider than it is tall. Wordmark is live Sora text, not paths.",
+      "background": "dark"
+    },
+    {
+      "file": "logo-horizontal-on-light.svg",
+      "name": "Primary logo \u2014 horizontal, on light",
+      "kind": "logo",
+      "description": "The horizontal lockup with navy ink, for white or pale surfaces.",
+      "background": "light"
+    },
+    {
+      "file": "logo-stacked-on-dark.svg",
+      "name": "Logo \u2014 stacked, on dark",
+      "kind": "logo",
+      "description": "Mark above wordmark, for square-ish space: splash screens, centred cards, sponsor slots.",
+      "background": "dark"
+    },
+    {
+      "file": "logo-stacked-on-light.svg",
+      "name": "Logo \u2014 stacked, on light",
+      "kind": "logo",
+      "description": "The stacked lockup with navy ink, for white or pale surfaces.",
+      "background": "light"
+    },
+    {
+      "file": "mark-on-dark.svg",
+      "name": "Mark, on dark",
+      "kind": "icon",
+      "description": "The eight-node mark alone, near-white nodes with the cyan core. Where the brand is already established \u2014 avatars, loading states.",
+      "background": "dark"
+    },
+    {
+      "file": "mark-on-light.svg",
+      "name": "Mark, on light",
+      "kind": "icon",
+      "description": "The mark with navy nodes, for white or pale surfaces.",
+      "background": "light"
+    },
+    {
+      "file": "mark-mono-light.svg",
+      "name": "Mark, one colour, on dark",
+      "kind": "icon",
+      "description": "Single-colour reproduction in near-white. For engraving, stamps, or anywhere the cyan cannot follow.",
+      "background": "dark"
+    },
+    {
+      "file": "mark-mono-dark.svg",
+      "name": "Mark, one colour, on light",
+      "kind": "icon",
+      "description": "Single-colour reproduction in navy, for light surfaces.",
+      "background": "light"
+    },
+    {
+      "file": "icon-app.svg",
+      "name": "App icon",
+      "kind": "icon",
+      "description": "Rounded-square tile with the full mark. Home screens and app stores; 1024px master.",
+      "background": "any"
+    },
+    {
+      "file": "icon-favicon.svg",
+      "name": "Favicon",
+      "kind": "icon",
+      "description": "Simplified tile: spokes dropped, cardinal nodes removed, core enlarged. Legible at 16px, where the full mark turns to mush.",
+      "background": "any"
+    },
+    {
+      "file": "logo-horizontal-on-dark@2x.png",
+      "name": "Primary logo \u2014 horizontal, on dark (PNG)",
+      "kind": "logo",
+      "description": "1600x373 raster of the horizontal lockup on navy, with Sora baked in. For Slack, email, and anywhere SVG is not accepted.",
+      "background": "dark"
+    },
+    {
+      "file": "logo-horizontal-on-light@2x.png",
+      "name": "Primary logo \u2014 horizontal, on light (PNG)",
+      "kind": "logo",
+      "description": "1600x373 raster of the horizontal lockup on white.",
+      "background": "light"
+    },
+    {
+      "file": "logo-stacked-on-dark@2x.png",
+      "name": "Logo \u2014 stacked, on dark (PNG)",
+      "kind": "logo",
+      "description": "900x596 raster of the stacked lockup on navy.",
+      "background": "dark"
+    },
+    {
+      "file": "logo-stacked-on-light@2x.png",
+      "name": "Logo \u2014 stacked, on light (PNG)",
+      "kind": "logo",
+      "description": "900x596 raster of the stacked lockup on white.",
+      "background": "light"
+    },
+    {
+      "file": "mark-on-dark@2x.png",
+      "name": "Mark, on dark (PNG)",
+      "kind": "icon",
+      "description": "800x800 raster of the mark on navy.",
+      "background": "dark"
+    },
+    {
+      "file": "mark-on-light@2x.png",
+      "name": "Mark, on light (PNG)",
+      "kind": "icon",
+      "description": "800x800 raster of the mark on white.",
+      "background": "light"
+    },
+    {
+      "file": "mark-mono-light@2x.png",
+      "name": "Mark, one colour, on dark (PNG)",
+      "kind": "icon",
+      "description": "800x800 single-colour mark on navy.",
+      "background": "dark"
+    },
+    {
+      "file": "mark-mono-dark@2x.png",
+      "name": "Mark, one colour, on light (PNG)",
+      "kind": "icon",
+      "description": "800x800 single-colour mark on white.",
+      "background": "light"
+    },
+    {
+      "file": "icon-app@2x.png",
+      "name": "App icon (PNG)",
+      "kind": "icon",
+      "description": "1024x1024 app-store master.",
+      "background": "any"
+    },
+    {
+      "file": "icon-favicon@2x.png",
+      "name": "Favicon (PNG)",
+      "kind": "icon",
+      "description": "512x512 raster of the simplified favicon tile.",
+      "background": "any"
+    }
+  ]
+}
